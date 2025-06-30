@@ -12,7 +12,7 @@ data:extend(
         gravity_pull = 20,
         distance = 30, --how far away the planet is from the center
         orientation = 0.52,
-        magnitude = 1.2,
+        magnitude = 1.0,
         order = "b[legion]",
         subgroup = "planets",
         map_seed_offset = 0,
@@ -21,21 +21,21 @@ data:extend(
         solar_power_in_space = 60,
         platform_procession_set =
         {
-        arrival = {"planet-to-platform-b"},
-        departure = {"platform-to-planet-a"}
+            arrival = {"planet-to-platform-b"},
+            departure = {"platform-to-planet-a"}
         },
         planet_procession_set =
         {
-        arrival = {"platform-to-planet-b"},
-        departure = {"planet-to-platform-a"}
+            arrival = {"platform-to-planet-b"},
+            departure = {"planet-to-platform-a"}
         },
         surface_properties =
         {
-        ["day-night-cycle"] = 8 * minute,
-        ["magnetic-field"] = 25,
-        ["solar-power"] = 30,
-        pressure = 4000,
-        gravity = 40
+            ["day-night-cycle"] = 8 * minute,
+            ["magnetic-field"] = 25,
+            ["solar-power"] = 30,
+            pressure = 4000,
+            gravity = 40
         },
     },
     {
