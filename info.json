@@ -1,0 +1,18 @@
+{
+    "name": "syndicate-galaxy",
+    "version": "0.0.1",
+    "title": "The Syndicate Galaxy",
+    "author": "Raziphel",
+    "description": "Breach beyond the solar system into the Syndicate Galaxy!  Bringing with it new planets, machines and processes",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "space-age >= 2.0.55",
+        "base >= 2.0.55",
+        "PlanetsLib >= 1.2.8"
+    ],
+    "space_travel_required": true,
+    "spoiling_required": true,
+    "freezing_required": true,
+    "segmented_units_required": true,
+    "expansion_shaders_required": true
+}
