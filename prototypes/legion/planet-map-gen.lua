@@ -25,6 +25,7 @@ planet_map_gen.legion = function()
             ["tile"] = {
                 settings = {
                     ["verdite"] = {},
+                    -- Vulcanus
                     ["lava"] = {},
                     ["volcanic-soil-dark"] = {},
                     ["volcanic-ash-dark"] = {},
@@ -36,25 +37,61 @@ planet_map_gen.legion = function()
                     ["volcanic-cracks-hot"] = {},
                     ["volcanic-jagged-ground"] = {},
                     ["volcanic-ash-cracks"] = {},
+                    -- Nauvis
+                    ["grass-1"] = {},
+                    ["grass-2"] = {},
+                    ["grass-3"] = {},
+                    ["grass-4"] = {},
+                    ["red-desert-0"] = {},
+                    ["red-desert-1"] = {},
+                    ["red-desert-2"] = {},
+                    ["red-desert-3"] = {},
+                    ["nuclear-ground"] = {},
                 }
             },
             ["decorative"] = {
                 settings = {
+                    -- Vulcanus
                     ["vulcanus-rock-decal-large"] = {},
                     ["vulcanus-crack-decal-large"] = {},
                     ["vulcanus-crack-decal-huge-warm"] = {},
                     ["vulcanus-dune-decal"] = {},
                     ["vulcanus-lava-fire"] = {},
                     ["curly-roots-grey"] = {},
-                    --["pebbles"] = {},
-                    --["red-nerve-root-veins-dense"] = {},
-                    --["red-nerve-root-veins-sparse"] = {},
+                    -- Nauvis
+                    ["brown-hairy-grass"] = {},
+                    ["brown-carpet-grass"] = {},
+                    ["brown-asterisk-mini"] = {},
+                    ["brown-asterisk"] = {},
+                    ["red-asterisk"] = {},
+                    ["dark-mud-decal"] = {},
+                    ["light-mud-decal"] = {},
+                    ["cracked-mud-decal"] = {},
+                    ["red-desert-decal"] = {},
+                    ["sand-decal"] = {},
+                    ["sand-dune-decal"] = {},
+                    ["red-pita"] = {},
+                    ["red-croton"] = {},
+                    ["brown-fluff"] = {},
+                    ["brown-fluff-dry"] = {},
+                    ["red-desert-bush"] = {},
+                    ["white-desert-bush"] = {},
+                    ["garballo-mini-dry"] = {},
+                    ["garballo"] = {},
+                    ["green-bush-mini"] = {},
+                    ["medium-rock"] = {},
+                    ["small-rock"] = {},
+                    ["tiny-rock"] = {},
+                    ["medium-sand-rock"] = {},
+                    ["small-sand-rock"] = {}
                 }
             },
             ["entity"] = {
                 settings = {
                     ["ashland-lichen-tree"] = {},
                     ["ashland-lichen-tree-flaming"] = {},
+                    ["uranium-ore"] = {},
+                    ["stone"] = {},
                 }
             }
         }
