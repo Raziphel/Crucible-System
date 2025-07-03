@@ -8,7 +8,7 @@ PlanetsLib:extend({
         starmap_icon = "__syndicate_galaxy__/graphics/icons/legion-starmap.png",
         starmap_icon_size = 512,
         gravity_pull = 20,
-        magnitude = 1.0,
+        magnitude = 2.0,
         order = "b[syndicate]",
         subgroup = "planets",
         map_seed_offset = 0,
@@ -40,7 +40,7 @@ PlanetsLib:extend({
             departure = { "planet-to-platform-a" }
         },
         surface_properties = {
-            ["day-night-cycle"] = 8 * 60,
+            ["day-night-cycle"] = 20 * minute,
             ["magnetic-field"] = 25,
             ["solar-power"] = 30,
             pressure = 4000,

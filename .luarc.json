@@ -19,5 +19,9 @@
 			"${workspaceFolder}/__core__",
 			"${workspaceFolder}/__base__"
 		]
-	}
+	},
+    "diagnostics.disable": [
+        "undefined-field",
+        "undefined-global"
+    ]
 }

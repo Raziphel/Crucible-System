@@ -1,80 +1,62 @@
 local planet_map_gen = {}
 
-    planet_map_gen.legion = function()
+planet_map_gen.legion = function()
     return
     {
-        aux_climate_control = false,
-        moisture_climate_control = false,
-        property_expression_names =
-        { -- Warning: anything set here overrides any selections made in the map setup screen so the options do nothing.
-        --cliff_elevation = "cliff_elevation_nauvis",
-        --cliffiness = "cliffiness_nauvis",
-        --elevation = "elevation_island"
+        starting_area = 2,
+        property_expression_names = {
+            elevation = "legion_elevation",
+            temperature = "legion_temperature",
+            moisture = "legion_moisture",
+            aux = "legion_aux",
+            cliffiness = "cliffiness_basic",
+            cliff_elevation = "cliff_elevation_from_elevation",
+            ["entity:coal:probability"] = "legion_coal_probability",
+            ["entity:coal:richness"] = "legion_coal_richness",
+            ["entity:uranium:probability"] = "legion_uranium_ore_probability",
+            ["entity:uranium:richness"] = "legion_uranium_ore_richness",
         },
-        cliff_settings =
-        {
-        name = "cliff",
-        control = "legion_cliff",
-        cliff_smoothing = 0
+        cliff_settings = {
+            name = "cliff-legion",
+            cliff_elevation_interval = 120,
+            cliff_elevation_0 = 70
         },
-        autoplace_controls =
-        {
-        ["coal"] = {},
-        ["uranium-ore"] = {},
-        ["legion-enemy-base"] = {},
-        ["legion_cliff"] = {},
-        },
-        autoplace_settings =
-        {
-        ["tile"] =
-        {
-            settings =
-            {
-            ["grass-1"] = {},
-            ["grass-2"] = {},
-            ["grass-3"] = {},
-            ["grass-4"] = {},
-            ["dry-dirt"] = {},
-            ["dirt-1"] = {},
-            ["dirt-2"] = {},
-            ["dirt-3"] = {},
-            ["dirt-4"] = {},
-            ["dirt-5"] = {},
-            ["dirt-6"] = {},
-            ["dirt-7"] = {},
-            ["sand-1"] = {},
-            ["sand-2"] = {},
-            ["sand-3"] = {},
-            ["red-desert-0"] = {},
-            ["red-desert-1"] = {},
-            ["red-desert-2"] = {},
-            ["red-desert-3"] = {},
-            ["water"] = {},
-            ["deepwater"] = {}
+        autoplace_settings = {
+            ["tile"] = {
+                settings = {
+                    ["verdite"] = {},
+                    ["lava"] = {},
+                    ["volcanic-soil-dark"] = {},
+                    ["volcanic-ash-dark"] = {},
+                    ["volcanic-cracks"] = {},
+                    ["volcanic-cracks-warm"] = {},
+                    ["volcanic-folds"] = {},
+                    ["volcanic-folds-flat"] = {},
+                    ["volcanic-folds-warm"] = {},
+                    ["volcanic-cracks-hot"] = {},
+                    ["volcanic-jagged-ground"] = {},
+                    ["volcanic-ash-cracks"] = {},
+                }
+            },
+            ["decorative"] = {
+                settings = {
+                    ["vulcanus-rock-decal-large"] = {},
+                    ["vulcanus-crack-decal-large"] = {},
+                    ["vulcanus-crack-decal-huge-warm"] = {},
+                    ["vulcanus-dune-decal"] = {},
+                    ["vulcanus-lava-fire"] = {},
+                    ["curly-roots-grey"] = {},
+                    --["pebbles"] = {},
+                    --["red-nerve-root-veins-dense"] = {},
+                    --["red-nerve-root-veins-sparse"] = {},
+                }
+            },
+            ["entity"] = {
+                settings = {
+                    ["ashland-lichen-tree"] = {},
+                    ["ashland-lichen-tree-flaming"] = {},
+                }
             }
-        },
-        ["decorative"] =
-        {
-            settings =
-            {
-            ["brown-hairy-grass"] = {},
-            ["green-hairy-grass"] = {},
-            ["brown-carpet-grass"] = {},
-            ["green-carpet-grass"] = {},
-            ["small-sand-rock"] = {}
-            }
-        },
-        ["entity"] =
-        {
-            settings =
-            {
-            ["coal"] = {},
-            ["uranium-ore"] = {},
-            ["big-sand-rock"] = {},
-            ["huge-rock"] = {},
-            ["big-rock"] = {},
-            }
-        }
         }
     }
 end

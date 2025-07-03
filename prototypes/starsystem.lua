@@ -30,7 +30,7 @@ PlanetsLib:extend({
                 name = "star",
             },
             distance = 30,
-            orientation = 0.20,
+            orientation = 0.13,
             sprite = {
                 type = "sprite",
                 filename = "__syndicate_galaxy__/graphics/orbits/syndicate_system_edge_orbit.png",
