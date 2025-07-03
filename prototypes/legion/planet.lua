@@ -25,7 +25,7 @@ PlanetsLib:extend({
             orientation = 0.25,
             sprite = {
                 type = "sprite",
-                filename = "__syndicate_galaxy__/graphics/orbits/legion_orbit.png",
+                filename = "__syndicate_galaxy__/graphics/orbits/legion-orbit.png",
                 size = 3075,
                 scale = 0.25,
             }

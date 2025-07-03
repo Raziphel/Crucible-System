@@ -33,7 +33,7 @@ PlanetsLib:extend({
             orientation = 0.13,
             sprite = {
                 type = "sprite",
-                filename = "__syndicate_galaxy__/graphics/orbits/syndicate_system_edge_orbit.png",
+                filename = "__syndicate_galaxy__/graphics/orbits/syndicate-system-edge-orbit.png",
                 size = 3843,
                 scale = 0.25,
             }
@@ -57,7 +57,7 @@ PlanetsLib:extend({
             orientation = 0.35,
             sprite = {
                 type = "sprite",
-                filename = "__syndicate_galaxy__/graphics/orbits/syndicate_system_edge_orbit.png",
+                filename = "__syndicate_galaxy__/graphics/orbits/syndicate-system-edge-orbit.png",
                 size = 3843,
                 scale = 0.25,
             }
