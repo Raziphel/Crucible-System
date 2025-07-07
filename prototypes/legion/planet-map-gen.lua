@@ -7,14 +7,17 @@ planet_map_gen.legion = function()
         aux_climate_control = true,
         autoplace_controls =
         {
-            ["stone"] = {},
-            ["uranium-ore"] = {},
-            ["coal"] = {},
-            ["crude-oil"] = {},
+            ["uranium-ore"] = { frequency = 0.3, size = 1, richness = 2 },
+            ["coal"] = { frequency = 0.5, size = 2, richness = 2 },
+            ["crude-oil"] = { frequency = 0.5, size = 1, richness = 3 },
+            ["nauvis_cliff"] = { frequency = 3, size = 1, richness = 1 },
         },
         autoplace_settings = {
             ["tile"] = {
                 settings = {
+                    -- Legion
+                    ["legion-grass-1"] = {},
+                    ["legion-grass-2"] = {},
                     -- Vulcanus
                     ["lava"] = {},
                     ["volcanic-soil-dark"] = {},
@@ -29,8 +32,7 @@ planet_map_gen.legion = function()
                     ["volcanic-ash-cracks"] = {},
                     -- Nauvis
                     ["grass-1"] = {},
-                    ["red-desert-0"] = {},
-                    ["red-desert-1"] = {},
+                    ["grass-2"] = {},
                 }
             },
             ["decorative"] = {
@@ -41,13 +43,6 @@ planet_map_gen.legion = function()
                     ["vulcanus-crack-decal-huge-warm"] = {},
                     ["vulcanus-dune-decal"] = {},
                     ["curly-roots-grey"] = {},
-                    -- Nauvis
-                    ["brown-hairy-grass"] = {},
-                    ["brown-carpet-grass"] = {},
-                    ["dark-mud-decal"] = {},
-                    ["light-mud-decal"] = {},
-                    ["cracked-mud-decal"] = {},
-                    ["brown-fluff"] = {},
                 }
             },
             ["entity"] = {
@@ -55,11 +50,10 @@ planet_map_gen.legion = function()
                     -- Vulcanus trees
                     ["ashland-lichen-tree"] = {},
                     ["ashland-lichen-tree-flaming"] = {},
-
-                    -- Other entities
-                    ["stone"] = {},
+                    -- Resources
                     ["uranium-ore"] = {},
                     ["coal"] = {},
+                    ["crude-oil"] = {},
                 }
             }
         }

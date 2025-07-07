@@ -3,7 +3,7 @@ require("prototypes.starsystem")
 require("prototypes.routes")
 
 -- Tiles
-require("prototypes.tiles.lava-fix")
+require("prototypes.tiles.legion-tiles")
 
 
 -- Legion

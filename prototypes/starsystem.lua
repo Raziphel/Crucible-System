@@ -2,7 +2,7 @@ PlanetsLib:extend({
     {
         type = "space-location",
         name = "syndicate",
-        starmap_icon = "__syndicate_galaxy__/graphics/icons/geass-star-starmap.png",
+        starmap_icon = "__syndicate_galaxy__/graphics/icons/geass-star.png",
         starmap_icon_size = 512,
         sprite_only = true,
         orbit = {
