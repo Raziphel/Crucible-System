@@ -3,7 +3,6 @@ require("prototypes.starsystem")
 require("prototypes.routes")
 
 -- Tiles
-require("prototypes.tiles.verdite")
 require("prototypes.tiles.lava-fix")
 
 

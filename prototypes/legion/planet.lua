@@ -6,7 +6,7 @@ PlanetsLib:extend({
         name = "legion",
         icon = "__syndicate_galaxy__/graphics/icons/legion.png",
         starmap_icon = "__syndicate_galaxy__/graphics/icons/legion-starmap.png",
-        starmap_icon_size = 512,
+        starmap_icon_size = 920,
         gravity_pull = 20,
         magnitude = 2.0,
         order = "b[syndicate]",
