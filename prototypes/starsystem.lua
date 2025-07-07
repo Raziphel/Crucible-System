@@ -21,7 +21,6 @@ PlanetsLib:extend({
     {
         type = "space-location",
         name = "syndicate-stargate",
-        localised_name = "Syndicate system stargate",
         icon = "__syndicate_galaxy__/graphics/icons/edge-icon.png",
         solar_power_in_space = 30,
         orbit = {
@@ -45,7 +44,6 @@ PlanetsLib:extend({
     {
         type = "space-location",
         name = "nauvis-stargate",
-        localised_name = "Nauvis system stargate",
         icon = "__space-age__/graphics/icons/solar-system-edge.png",
         solar_power_in_space = 30,
         orbit = {
