@@ -8,16 +8,16 @@ planet_map_gen.legion = function()
 
         cliff_settings = {
             enabled = true,
-            cliff_elevation_interval = 50,
-            cliff_elevation_0 = 20,
+            cliff_elevation_interval = 10,
+            cliff_elevation_0 = 5,
             name = "cliff"
         },
 
         autoplace_controls =
         {
             ["uranium-ore"] = { frequency = 0.3, size = 1, richness = 2 },
-            ["coal"] = { frequency = 0.5, size = 2, richness = 2 },
-            ["crude-oil"] = { frequency = 0.5, size = 1, richness = 3 },
+            ["crude-oil"] = { frequency = 0.2, size = 1, richness = 3 },
+            ["verdite-ore"] = { frequency = 0.2, size = 1, richness = 3 },
         },
         autoplace_settings = {
             ["tile"] = {
@@ -27,15 +27,13 @@ planet_map_gen.legion = function()
                     ["legion-grass-2"] = {},
                     -- Vulcanus
                     ["lava"] = {},
+                    ["lava-hot"] = {},
                     ["volcanic-soil-dark"] = {},
+                    ["volcanic-soil-light"] = {},
                     ["volcanic-ash-dark"] = {},
                     ["volcanic-cracks"] = {},
                     ["volcanic-cracks-warm"] = {},
-                    ["volcanic-folds"] = {},
-                    ["volcanic-folds-flat"] = {},
-                    ["volcanic-folds-warm"] = {},
                     ["volcanic-cracks-hot"] = {},
-                    ["volcanic-jagged-ground"] = {},
                     ["volcanic-ash-cracks"] = {},
                     -- Nauvis
                     ["grass-1"] = {},
@@ -46,12 +44,11 @@ planet_map_gen.legion = function()
             },
             ["decorative"] = {
                 settings = {
-                    -- Vulcanus
-                    ["vulcanus-rock-decal-large"] = {},
-                    ["vulcanus-crack-decal-large"] = {},
-                    ["vulcanus-crack-decal-huge-warm"] = {},
-                    ["vulcanus-dune-decal"] = {},
-                    ["curly-roots-grey"] = {},
+                    ["red-pita"] = {},
+                    ["fuchsia-pita"] = {},
+                    ["tiny-volcanic-rock"] = {},
+                    ["small-volcanic-rock"] = {},
+                    ["medium-volcanic-rock"] = {},
                 }
             },
             ["entity"] = {
@@ -61,8 +58,8 @@ planet_map_gen.legion = function()
                     ["ashland-lichen-tree-flaming"] = {},
                     -- Resources
                     ["uranium-ore"] = {},
-                    ["coal"] = {},
                     ["crude-oil"] = {},
+                    ["verdite-ore"] = {},
                 }
             },
         }

@@ -1,4 +1,4 @@
-local planet_map_gen = require("prototypes/legion/planet-map-gen")
+local planet_map_gen = require("prototypes/legion/planet/planet-map-gen")
 
 PlanetsLib:extend({
     {

@@ -2,8 +2,8 @@ data:extend({
     {
         type = "technology",
         name = "stargate-discovery",
-        icons = util.technology_icon_constant_planet("__syndicate_galaxy__/graphics/icons/edge-icon.png"),
-        icon_size = 64,
+        icons = util.technology_icon_constant_planet("__syndicate_galaxy__/graphics/technology/edge-icon-tech.png"),
+        icon_size = 256,
         essential = true,
         effects =
         {
@@ -40,8 +40,8 @@ data:extend({
     {
         type = "technology",
         name = "legion-discovery",
-        icons = util.technology_icon_constant_planet("__syndicate_galaxy__/graphics/icons/legion-starmap.png"),
-        icon_size = 512,
+        icons = util.technology_icon_constant_planet("__syndicate_galaxy__/graphics/technology/legion-tech.png"),
+        icon_size = 256,
         essential = true,
         effects =
         {
@@ -69,5 +69,24 @@ data:extend({
             },
             time = 60
         }
-    }
+    },
+    {
+        type = "technology",
+        name = "verdite-processing",
+        icon = "__syndicate_galaxy__/graphics/technology/verdite-tech.png",
+        icon_size = 256,
+        prerequisites = { "legion-discovery" },
+        research_trigger =
+        {
+            type = "mine-entity",
+            entity = "verdite-ore"
+        },
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "verdite-processing"
+            },
+        }
+    },
 })

@@ -10,5 +10,13 @@ data:extend({
         name = "legion-enemy-base",
         order = "b-z",
         category = "enemy"
-    }
+    },
+    {
+        type = "autoplace-control",
+        name = "verdite-ore",
+        localised_name = { "", "[entity=verdite-ore] ", { "entity-name.verdite-ore" } },
+        richness = true,
+        order = "j-k",
+        category = "resource"
+    },
 })
