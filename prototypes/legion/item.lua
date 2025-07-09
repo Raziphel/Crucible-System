@@ -9,11 +9,11 @@ data:extend({
     },
     {
         type = "item",
-        name = "verdite-ore",
-        icon = "__syndicate_galaxy__/graphics/icons/verdite.png",
+        name = "viridion-ore",
+        icon = "__syndicate_galaxy__/graphics/icons/viridion-ore.png",
         subgroup = "legion-processes",
         color_hint = { text = "T" },
-        order = "c[verdite]-a[verdite-ore]",
+        order = "c[viridion]-a[viridion-ore]",
         inventory_move_sound = item_sounds.resource_inventory_move,
         pick_sound = item_sounds.resource_inventory_pickup,
         drop_sound = item_sounds.resource_inventory_move,
@@ -23,16 +23,36 @@ data:extend({
     },
     {
         type = "item",
-        name = "verdite-plate",
-        icon = "__syndicate_galaxy__/graphics/icons/verdite-plate.png",
+        name = "viridion-plate",
+        icon = "__syndicate_galaxy__/graphics/icons/viridion-plate.png",
         subgroup = "legion-processes",
         color_hint = { text = "T" },
-        order = "c[verdite]-a[verdite-plate]",
+        order = "c[viridion]-a[viridion-plate]",
         inventory_move_sound = item_sounds.resource_inventory_move,
         pick_sound = item_sounds.resource_inventory_pickup,
         drop_sound = item_sounds.resource_inventory_move,
         stack_size = 50,
         default_import_location = "legion",
         weight = 10 * kg
+    },
+    {
+        type = "item",
+        name = "advanced-foundry",
+        icon = "__syndicate_galaxy__/graphics/icons/advanced-foundry-icon.png",
+        icon_size = 64,
+        subgroup = "production-machine",
+        order = "b[foundry]-b[advanced-foundry]",
+        place_result = "advanced-foundry",
+        stack_size = 1,
+        default_import_location = "legion",
+        weight = 1000 * kg,
+        surface_conditions =
+        {
+            {
+                property = "pressure",
+                min = 4000,
+                max = 4000
+            }
+        },
     },
 })

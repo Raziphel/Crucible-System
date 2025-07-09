@@ -66,10 +66,10 @@ end
 data:extend({
     resource(
         {
-            name = "verdite-ore",
+            name = "viridion-ore",
             order = "e",
             map_color = { r = 0 / 256, g = 225 / 256, b = 50 / 256, a = 1.000 },
-            mining_time = 20,
+            mining_time = 15,
             required_fluid = "lubricant",
             fluid_amount = 20,
             walking_sound = sounds.ore,

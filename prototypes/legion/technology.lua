@@ -72,21 +72,50 @@ data:extend({
     },
     {
         type = "technology",
-        name = "verdite-processing",
-        icon = "__syndicate_galaxy__/graphics/technology/verdite-tech.png",
+        name = "viridion-processing",
+        icon = "__syndicate_galaxy__/graphics/technology/viridion-tech.png",
         icon_size = 256,
         prerequisites = { "legion-discovery" },
         research_trigger =
         {
             type = "mine-entity",
-            entity = "verdite-ore"
+            entity = "viridion-ore"
         },
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "verdite-processing"
+                recipe = "viridion-processing"
             },
         }
     },
+    {
+        type = "technology",
+        name = "advanced-foundry-tech",
+        icon_size = 256,
+        icon = "__syndicate_galaxy__/graphics/technology/advanced-foundry-tech.png",
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "advanced-foundry"
+            },
+
+        },
+        prerequisites = { "viridion-processing" },
+        unit =
+        {
+            count = 5000,
+            ingredients =
+            {
+                { "utility-science-pack",         1 },
+                { "space-science-pack",           1 },
+                { "metallurgic-science-pack",     1 },
+                { "agricultural-science-pack",    1 },
+                { "electromagnetic-science-pack", 1 },
+            },
+            time = 60
+        },
+    },
+
 })

@@ -17,7 +17,7 @@ planet_map_gen.legion = function()
         {
             ["uranium-ore"] = { frequency = 0.3, size = 1, richness = 2 },
             ["crude-oil"] = { frequency = 0.2, size = 1, richness = 3 },
-            ["verdite-ore"] = { frequency = 0.2, size = 1, richness = 3 },
+            ["viridion-ore"] = { frequency = 0.2, size = 1, richness = 3 },
         },
         autoplace_settings = {
             ["tile"] = {
@@ -59,7 +59,7 @@ planet_map_gen.legion = function()
                     -- Resources
                     ["uranium-ore"] = {},
                     ["crude-oil"] = {},
-                    ["verdite-ore"] = {},
+                    ["viridion-ore"] = {},
                 }
             },
         }
