@@ -46,5 +46,11 @@ PlanetsLib:extend({
             pressure = 4000,
             gravity = 40
         },
+        surface_render_parameters = {
+            day_night_cycle_color_lookup = {
+                { 0.0,  "identity" },
+                { 0.35, "__core__/graphics/color_luts/night.png" },
+            }
+        },
     },
 })

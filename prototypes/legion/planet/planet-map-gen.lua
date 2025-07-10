@@ -15,6 +15,7 @@ planet_map_gen.legion = function()
 
         autoplace_controls =
         {
+            ["enemy-base"] = { frequency = 20, size = 7, richness = 7},
             ["uranium-ore"] = { frequency = 0.5, size = 1, richness = 2 },
             ["iridium-ore"] = { frequency = 0.5, size = 2, richness = 3 },
             ["tungsten_ore"] = { frequency = 1, size = 1, richness = 2 },
