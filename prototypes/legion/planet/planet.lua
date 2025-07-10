@@ -27,7 +27,7 @@ PlanetsLib:extend({
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/legion-orbit.png",
-                size = 3075,
+                size = 983,
             }
         },
 
