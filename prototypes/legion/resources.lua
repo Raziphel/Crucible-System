@@ -68,17 +68,17 @@ data:extend({
         {
             name = "iridium-ore",
             order = "e",
-            map_color = { r = 0 / 256, g = 225 / 256, b = 50 / 256, a = 1.000 },
-            mining_time = 15,
+            map_color = { r = 0.75, g = 0.75, b = 0.75, a = 1.0 },
+            mining_time = 5,
             required_fluid = "lubricant",
             fluid_amount = 20,
             walking_sound = sounds.ore,
-            mining_visualisation_tint = { r = 211 / 256, g = 190 / 256, b = 105 / 256, a = 1.000 },
+            mining_visualisation_tint = { r = 0.75, g = 0.75, b = 0.75, a = 1.0 }
         },
         {
-            base_density = 0.5,
-            regular_rq_factor_multiplier = 0.45,
-            starting_rq_factor_multiplier = 0.25,
+            base_density = 0.8,
+            regular_rq_factor_multiplier = 0.95,
+            starting_rq_factor_multiplier = 0.75,
             candidate_spot_count = 18,
             has_starting_area_placement = true
         }

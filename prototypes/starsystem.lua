@@ -10,8 +10,8 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "star",
             },
-            distance = 100,
-            orientation = 0.96
+            distance = 150,
+            orientation = 0.25
         },
         magnitude = 15,
     },
@@ -28,13 +28,12 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "geass",
             },
-            distance = 15,
-            orientation = 0.35,
+            distance = 40,
+            orientation = 0.75,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/crucible-system-edge-orbit.png",
-                size = 3843,
-                scale = 0.25,
+                size = 4096,
             }
         }
     }

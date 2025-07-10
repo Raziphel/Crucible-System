@@ -16,19 +16,18 @@ PlanetsLib:extend({
         map_gen_settings = planet_map_gen.legion(),
         pollutant_type = nil,
         solar_power_in_space = 60,
-        tier = 4,
+        tier = 5,
         orbit = {
             parent = {
                 type = "space-location",
                 name = "geass",
             },
             distance = 12,
-            orientation = 0.25,
+            orientation = 0.65,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/legion-orbit.png",
                 size = 3075,
-                scale = 0.25,
             }
         },
 
