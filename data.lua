@@ -1,6 +1,7 @@
 -- System
 require("prototypes.starsystem")
 require("prototypes.routes")
+require("prototypes.technology")
 -- Legion
 require("prototypes.legion.tiles")
 require("prototypes.legion.resources")

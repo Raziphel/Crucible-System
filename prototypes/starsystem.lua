@@ -27,11 +27,12 @@ PlanetsLib:extend({
             parent = {
                 type = "space-location",
                 name = "geass",
+            },
             distance = 15,
             orientation = 0.35,
             sprite = {
                 type = "sprite",
-                filename = "__syndicate_galaxy__/graphics/orbits/syndicate-system-edge-orbit.png",
+                filename = "__crucible_system__/graphics/orbits/crucible-system-edge-orbit.png",
                 size = 3843,
                 scale = 0.25,
             }
