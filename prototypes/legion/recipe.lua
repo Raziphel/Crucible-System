@@ -38,14 +38,11 @@ data:extend({
         enabled = false,
         energy_required = 1000,
         ingredients = {
-            { type = "item",  name = "assembling-machine-3",  amount = 10, },
-            { type = "item",  name = "processing-unit",       amount = 25 },
+            { type = "item",  name = "foundry",               amount = 5, },
             { type = "item",  name = "productivity-module-3", amount = 25 },
             { type = "item",  name = "speed-module-3",        amount = 25 },
             { type = "item",  name = "viridion-plate",        amount = 100 },
-            { type = "item",  name = "low-density-structure", amount = 100 },
             { type = "item",  name = "refined-concrete",      amount = 100 },
-            { type = "fluid", name = "lava",                  amount = 200 },
             { type = "fluid", name = "lubricant",             amount = 200 },
         },
         results = {

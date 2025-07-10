@@ -37,7 +37,7 @@ data:extend({
                         line_length = 1,
                         repeat_count = 120,
                         draw_as_shadow = true,
-                        animation_speed = 0.3,
+                        animation_speed = 0.2,
                         scale = 0.5
                     },
                     {
@@ -45,7 +45,7 @@ data:extend({
                         width = 530,
                         height = 530,
                         frame_count = 120,
-                        animation_speed = 0.3,
+                        animation_speed = 0.2,
                         scale = 0.5,
                         stripes = {
                             {
@@ -75,7 +75,7 @@ data:extend({
                         frame_count = 120,
                         draw_as_glow = true,
                         scale = 0.5,
-                        animation_speed = 0.3,
+                        animation_speed = 0.2,
                         blend_mode = "additive",
                         stripes = {
                             {
@@ -104,14 +104,14 @@ data:extend({
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions_per_minute = { pollution = 20 }
+            emissions_per_minute = { pollution = 30 }
         },
         energy_usage = "500kW",
         ingredient_count = 9,
         module_slots = 8,
         allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
         heating_energy = feature_flags["freezing"] and "100kW" or nil,
-        circuit_connector = circuit_connector_definitions["assembling-machine"],
+        circuit_connector = circuit_connector_definitions["foundry"],
         circuit_wire_max_distance = 20,
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
