@@ -9,7 +9,8 @@
         "space-age >= 2.0.55",
         "base >= 2.0.55",
         "PlanetsLib >= 1.2.8",
-        "alien-biomes-graphics >= 0.7.1"
+        "alien-biomes-graphics >= 0.7.1",
+        "ArmouredBiters >= 1.2.1"
     ],
     "space_travel_required": true,
     "spoiling_required": true,

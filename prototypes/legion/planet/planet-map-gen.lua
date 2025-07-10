@@ -15,7 +15,7 @@ planet_map_gen.legion = function()
 
         autoplace_controls =
         {
-            ["enemy-base"] = { frequency = 20, size = 7, richness = 7},
+            ["enemy-base"] = { frequency = 1, size = 1, richness = 1 },
             ["uranium-ore"] = { frequency = 0.5, size = 1, richness = 2 },
             ["iridium-ore"] = { frequency = 0.5, size = 2, richness = 3 },
             ["tungsten_ore"] = { frequency = 1, size = 1, richness = 2 },
@@ -45,18 +45,19 @@ planet_map_gen.legion = function()
             },
             ["decorative"] = {
                 settings = {
-                    ["red-pita"] = {},
-                    ["fuchsia-pita"] = {},
-                    ["tiny-volcanic-rock"] = {},
-                    ["small-volcanic-rock"] = {},
-                    ["medium-volcanic-rock"] = {},
+                    ["red-pita"] = { frequency = 0.2, size = 1, richness = 1 },
+                    ["fuchsia-pita"] = { frequency = 0.2, size = 1, richness = 1 },
+                    ["tiny-volcanic-rock"] = { frequency = 0.2, size = 1, richness = 1 },
+                    ["small-volcanic-rock"] = { frequency = 0.2, size = 1, richness = 1 },
+                    ["medium-volcanic-rock"] = { frequency = 0.2, size = 1, richness = 1 },
                 }
             },
             ["entity"] = {
                 settings = {
+                    ["armoured-biter-spawner"] = {},
                     -- Vulcanus trees
-                    ["ashland-lichen-tree"] = {},
-                    ["ashland-lichen-tree-flaming"] = {},
+                    ["ashland-lichen-tree"] = { frequency = 0.5, size = 1, richness = 1 },
+                    ["ashland-lichen-tree-flaming"] = { frequency = 0.5, size = 1, richness = 1 },
                     -- Resources
                     ["uranium-ore"] = {},
                     ["iridium-ore"] = {},
