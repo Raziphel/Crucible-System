@@ -13,8 +13,8 @@ data:extend({
     },
     {
         type = "autoplace-control",
-        name = "viridion-ore",
-        localised_name = { "", "[entity=viridion-ore] ", { "entity-name.viridion-ore" } },
+        name = "iridium-ore",
+        localised_name = { "", "[entity=iridium-ore] ", { "entity-name.iridium-ore" } },
         richness = true,
         order = "j-k",
         category = "resource"

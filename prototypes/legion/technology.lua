@@ -1,20 +1,20 @@
 data:extend({
     {
         type = "technology",
-        name = "viridion-processing",
-        icon = "__crucible_system__/graphics/technology/viridion-tech.png",
+        name = "iridium-processing",
+        icon = "__crucible_system__/graphics/technology/iridium-tech.png",
         icon_size = 256,
         prerequisites = { "legion-discovery" },
         research_trigger =
         {
             type = "mine-entity",
-            entity = "viridion-ore"
+            entity = "iridium-ore"
         },
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "viridion-processing"
+                recipe = "iridium-processing"
             },
         }
     },
@@ -31,7 +31,7 @@ data:extend({
             },
 
         },
-        prerequisites = { "viridion-processing" },
+        prerequisites = { "iridium-processing" },
         unit =
         {
             count = 1000,

@@ -66,7 +66,7 @@ end
 data:extend({
     resource(
         {
-            name = "viridion-ore",
+            name = "iridium-ore",
             order = "e",
             map_color = { r = 0 / 256, g = 225 / 256, b = 50 / 256, a = 1.000 },
             mining_time = 15,

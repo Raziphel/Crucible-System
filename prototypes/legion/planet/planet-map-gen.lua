@@ -16,7 +16,7 @@ planet_map_gen.legion = function()
         autoplace_controls =
         {
             ["uranium-ore"] = { frequency = 0.5, size = 1, richness = 2 },
-            ["viridion-ore"] = { frequency = 0.5, size = 2, richness = 3 },
+            ["iridium-ore"] = { frequency = 0.5, size = 2, richness = 3 },
             ["tungsten_ore"] = { frequency = 1, size = 1, richness = 2 },
         },
         autoplace_settings = {
@@ -58,7 +58,7 @@ planet_map_gen.legion = function()
                     ["ashland-lichen-tree-flaming"] = {},
                     -- Resources
                     ["uranium-ore"] = {},
-                    ["viridion-ore"] = {},
+                    ["iridium-ore"] = {},
                     ["tungsten_ore"] = {},
                 }
             },
