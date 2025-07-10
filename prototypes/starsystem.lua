@@ -1,8 +1,8 @@
 PlanetsLib:extend({
     {
         type = "space-location",
-        name = "syndicate",
-        starmap_icon = "__syndicate_galaxy__/graphics/icons/geass-star.png",
+        name = "geass",
+        starmap_icon = "__crucible_system__/graphics/icons/geass-star.png",
         starmap_icon_size = 512,
         sprite_only = true,
         orbit = {
@@ -20,37 +20,13 @@ PlanetsLib:extend({
 PlanetsLib:extend({
     {
         type = "space-location",
-        name = "syndicate-stargate",
-        icon = "__syndicate_galaxy__/graphics/icons/edge-icon.png",
-        solar_power_in_space = 30,
+        name = "crucible-system-edge",
+        icon = "__crucible_system__/graphics/icons/edge-icon.png",
+        solar_power_in_space = 1,
         orbit = {
             parent = {
                 type = "space-location",
-                name = "star",
-            },
-            distance = 30,
-            orientation = 0.13,
-            sprite = {
-                type = "sprite",
-                filename = "__syndicate_galaxy__/graphics/orbits/syndicate-system-edge-orbit.png",
-                size = 3843,
-                scale = 0.25,
-            }
-        }
-    }
-})
-
-PlanetsLib:extend({
-    {
-        type = "space-location",
-        name = "nauvis-stargate",
-        icon = "__space-age__/graphics/icons/solar-system-edge.png",
-        solar_power_in_space = 30,
-        orbit = {
-            parent = {
-                type = "space-location",
-                name = "syndicate",
-            },
+                name = "geass",
             distance = 15,
             orientation = 0.35,
             sprite = {

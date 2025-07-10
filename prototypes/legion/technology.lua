@@ -1,20 +1,15 @@
 data:extend({
     {
         type = "technology",
-        name = "stargate-discovery",
-        icons = util.technology_icon_constant_planet("__syndicate_galaxy__/graphics/technology/edge-icon-tech.png"),
+        name = "crucible-system-discovery",
+        icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/edge-icon-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
         {
             {
                 type = "unlock-space-location",
-                space_location = "syndicate-stargate",
-                use_icon_overlay_constant = true
-            },
-            {
-                type = "unlock-space-location",
-                space_location = "nauvis-stargate",
+                space_location = "crucible-system-edge",
                 use_icon_overlay_constant = true
             },
         },
@@ -40,7 +35,7 @@ data:extend({
     {
         type = "technology",
         name = "legion-discovery",
-        icons = util.technology_icon_constant_planet("__syndicate_galaxy__/graphics/technology/legion-tech.png"),
+        icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/legion-tech.png"),
         icon_size = 256,
         essential = true,
         effects =
@@ -51,7 +46,7 @@ data:extend({
                 use_icon_overlay_constant = true
             }
         },
-        prerequisites = { "stargate-discovery" },
+        prerequisites = { "crucible-system-discovery" },
         unit =
         {
             count = 1000,
@@ -73,7 +68,7 @@ data:extend({
     {
         type = "technology",
         name = "viridion-processing",
-        icon = "__syndicate_galaxy__/graphics/technology/viridion-tech.png",
+        icon = "__crucible_system__/graphics/technology/viridion-tech.png",
         icon_size = 256,
         prerequisites = { "legion-discovery" },
         research_trigger =
@@ -93,7 +88,7 @@ data:extend({
         type = "technology",
         name = "advanced-foundry-tech",
         icon_size = 256,
-        icon = "__syndicate_galaxy__/graphics/technology/advanced-foundry-tech.png",
+        icon = "__crucible_system__/graphics/technology/advanced-foundry-tech.png",
         effects =
         {
             {

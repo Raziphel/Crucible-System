@@ -2,7 +2,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "advanced-foundry",
-        icon = "__syndicate_galaxy__/graphics/icons/advanced-foundry-icon.png",
+        icon = "__crucible_system__/graphics/icons/advanced-foundry-icon.png",
         icon_size = 64,
         flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
         minable = { hardness = 0.2, mining_time = 3, result = "advanced-foundry" },
@@ -29,7 +29,7 @@ data:extend({
             animation = {
                 layers = {
                     {
-                        filename = "__syndicate_galaxy__/graphics/entity/advanced-foundry/advanced-foundry-hr-shadow.png",
+                        filename = "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-shadow.png",
                         priority = "high",
                         width = 900,
                         height = 800,
@@ -50,13 +50,13 @@ data:extend({
                         stripes = {
                             {
                                 filename =
-                                "__syndicate_galaxy__/graphics/entity/advanced-foundry/advanced-foundry-hr-animation-1.png",
+                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-animation-1.png",
                                 width_in_frames = 8,
                                 height_in_frames = 8
                             },
                             {
                                 filename =
-                                "__syndicate_galaxy__/graphics/entity/advanced-foundry/advanced-foundry-hr-animation-2.png",
+                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-animation-2.png",
                                 width_in_frames = 8,
                                 height_in_frames = 7
                             }
@@ -80,13 +80,13 @@ data:extend({
                         stripes = {
                             {
                                 filename =
-                                "__syndicate_galaxy__/graphics/entity/advanced-foundry/advanced-foundry-hr-emission-1.png",
+                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-emission-1.png",
                                 width_in_frames = 8,
                                 height_in_frames = 8
                             },
                             {
                                 filename =
-                                "__syndicate_galaxy__/graphics/entity/advanced-foundry/advanced-foundry-hr-emission-2.png",
+                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-emission-2.png",
                                 width_in_frames = 8,
                                 height_in_frames = 7
                             }

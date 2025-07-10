@@ -1,9 +1,9 @@
 {
-    "name": "syndicate_galaxy",
+    "name": "crucible_system",
     "version": "0.0.1",
-    "title": "The Syndicate Galaxy",
+    "title": "The Crucible Galaxy",
     "author": "Raziphel",
-    "description": "Breach beyond the solar system into the Syndicate Galaxy!  Bringing with it new planets, machines and processes",
+    "description": "Breach beyond the solar system into the Crucible Galaxy!  Bringing with it new planets, machines and processes",
     "factorio_version": "2.0",
     "dependencies": [
         "space-age >= 2.0.55",

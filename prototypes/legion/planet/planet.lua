@@ -4,13 +4,13 @@ PlanetsLib:extend({
     {
         type = "planet",
         name = "legion",
-        icon = "__syndicate_galaxy__/graphics/icons/legion.png",
+        icon = "__crucible_system__/graphics/icons/legion.png",
         icon_size = 920,
-        starmap_icon = "__syndicate_galaxy__/graphics/icons/legion.png",
+        starmap_icon = "__crucible_system__/graphics/icons/legion.png",
         starmap_icon_size = 920,
         gravity_pull = 20,
         magnitude = 2.0,
-        order = "b[syndicate]",
+        order = "b[crucible]",
         subgroup = "planets",
         map_seed_offset = 0,
         map_gen_settings = planet_map_gen.legion(),
@@ -20,13 +20,13 @@ PlanetsLib:extend({
         orbit = {
             parent = {
                 type = "space-location",
-                name = "syndicate",
+                name = "geass",
             },
             distance = 12,
             orientation = 0.25,
             sprite = {
                 type = "sprite",
-                filename = "__syndicate_galaxy__/graphics/orbits/legion-orbit.png",
+                filename = "__crucible_system__/graphics/orbits/legion-orbit.png",
                 size = 3075,
                 scale = 0.25,
             }

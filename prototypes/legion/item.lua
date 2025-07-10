@@ -10,7 +10,7 @@ data:extend({
     {
         type = "item",
         name = "viridion-ore",
-        icon = "__syndicate_galaxy__/graphics/icons/viridion-ore.png",
+        icon = "__crucible_system__/graphics/icons/viridion-ore.png",
         subgroup = "legion-processes",
         color_hint = { text = "T" },
         order = "c[viridion]-a[viridion-ore]",
@@ -24,7 +24,7 @@ data:extend({
     {
         type = "item",
         name = "viridion-plate",
-        icon = "__syndicate_galaxy__/graphics/icons/viridion-plate.png",
+        icon = "__crucible_system__/graphics/icons/viridion-plate.png",
         subgroup = "legion-processes",
         color_hint = { text = "T" },
         order = "c[viridion]-a[viridion-plate]",
@@ -38,7 +38,7 @@ data:extend({
     {
         type = "item",
         name = "advanced-foundry",
-        icon = "__syndicate_galaxy__/graphics/icons/advanced-foundry-icon.png",
+        icon = "__crucible_system__/graphics/icons/advanced-foundry-icon.png",
         icon_size = 64,
         subgroup = "production-machine",
         order = "b[foundry]-b[advanced-foundry]",
