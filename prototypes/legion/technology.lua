@@ -20,14 +20,14 @@ data:extend({
     },
     {
         type = "technology",
-        name = "advanced-foundry",
+        name = "alloy-forge",
         icon_size = 256,
-        icon = "__crucible_system__/graphics/technology/advanced-foundry-tech.png",
+        icon = "__crucible_system__/graphics/technology/alloy-forge-tech.png",
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "advanced-foundry"
+                recipe = "alloy-forge"
             },
 
         },

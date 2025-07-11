@@ -76,10 +76,10 @@ data:extend({
             mining_visualisation_tint = { r = 0.75, g = 0.75, b = 0.75, a = 1.0 }
         },
         {
-            base_density = 0.8,
-            regular_rq_factor_multiplier = 0.95,
-            starting_rq_factor_multiplier = 0.75,
-            candidate_spot_count = 18,
+            base_density = 0.3,
+            regular_rq_factor_multiplier = 1.5,
+            starting_rq_factor_multiplier = 1.7,
+            candidate_spot_count = 35,
             has_starting_area_placement = true
         }
     ),

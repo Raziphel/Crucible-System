@@ -1,11 +1,11 @@
 data:extend({
     {
         type = "assembling-machine",
-        name = "advanced-foundry",
-        icon = "__crucible_system__/graphics/icons/advanced-foundry-icon.png",
+        name = "alloy-forge",
+        icon = "__crucible_system__/graphics/icons/alloy-forge-icon.png",
         icon_size = 64,
         flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
-        minable = { hardness = 0.2, mining_time = 3, result = "advanced-foundry" },
+        minable = { hardness = 0.2, mining_time = 2, result = "alloy-forge" },
         max_health = 2000,
         inventory_size = 300,
         corpse = "big-remnants",
@@ -29,7 +29,7 @@ data:extend({
             animation = {
                 layers = {
                     {
-                        filename = "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-shadow.png",
+                        filename = "__crucible_system__/graphics/entity/alloy-forge/alloy-forge-hr-shadow.png",
                         priority = "high",
                         width = 900,
                         height = 800,
@@ -50,13 +50,13 @@ data:extend({
                         stripes = {
                             {
                                 filename =
-                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-animation-1.png",
+                                "__crucible_system__/graphics/entity/alloy-forge/alloy-forge-hr-animation-1.png",
                                 width_in_frames = 8,
                                 height_in_frames = 8
                             },
                             {
                                 filename =
-                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-animation-2.png",
+                                "__crucible_system__/graphics/entity/alloy-forge/alloy-forge-hr-animation-2.png",
                                 width_in_frames = 8,
                                 height_in_frames = 7
                             }
@@ -80,13 +80,13 @@ data:extend({
                         stripes = {
                             {
                                 filename =
-                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-emission-1.png",
+                                "__crucible_system__/graphics/entity/alloy-forge/alloy-forge-hr-emission-1.png",
                                 width_in_frames = 8,
                                 height_in_frames = 8
                             },
                             {
                                 filename =
-                                "__crucible_system__/graphics/entity/advanced-foundry/advanced-foundry-hr-emission-2.png",
+                                "__crucible_system__/graphics/entity/alloy-forge/alloy-forge-hr-emission-2.png",
                                 width_in_frames = 8,
                                 height_in_frames = 7
                             }
@@ -99,16 +99,16 @@ data:extend({
         crafting_categories = {
             "metallurgy", "advanced-metallurgy"
         },
-        crafting_speed = 20,
+        crafting_speed = 8,
         impact_category = "metal",
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
             emissions_per_minute = { pollution = 30 }
         },
-        energy_usage = "500kW",
+        energy_usage = "5.5MW",
         ingredient_count = 9,
-        module_slots = 8,
+        module_slots = 6,
         allowed_effects = { "consumption", "speed", "productivity", "pollution", "quality" },
         heating_energy = feature_flags["freezing"] and "100kW" or nil,
         circuit_connector = circuit_connector_definitions["foundry"],

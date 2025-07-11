@@ -1,0 +1,9 @@
+Special thanks to Frontrider (Creator of Dea Dea System) for tons of help on this project. 
+Special thanks to MeteorSwarm (Creator of Muluna) for help on this project. 
+Special thanks to all of the development team at "The Foundry" modding group on Discord for help and support. (https://discord.com/invite/VuVhYUBbWE)
+
+Credits to:
+Earendel for 'Alien Biomes Graphics' for all biome graphics used.
+Bartz24 for 'Planet Castra' concept and graphics. (Edited Millerite graphics for Iridium)
+Hurricane045 for his graphics. (https://www.figma.com/proto/y1IQG08ZG2jIeJ5sTyF4MP/)
+Rjdunlap for all of his planet mods, used noise expressions and concepts for some planet generation.

@@ -41,7 +41,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "advanced-foundry",
+        name = "alloy-forge",
         category = "metallurgy",
         enabled = false,
         energy_required = 1000,
@@ -54,7 +54,7 @@ data:extend({
             { type = "fluid", name = "lubricant",             amount = 200 },
         },
         results = {
-            { name = "advanced-foundry", amount = 1, type = "item" }
+            { name = "alloy-forge", amount = 1, type = "item" }
         },
         allow_productivity = false,
         auto_recycle = false,

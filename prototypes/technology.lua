@@ -1,6 +1,34 @@
 data:extend({
     {
         type = "technology",
+        name = "fluid-mining",
+        icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/fluid-mining-tech.png"),
+        icon_size = 256,
+        essential = true,
+        effects =
+        {
+            {
+                type = "mining-with-fluid",
+                modifier = true
+            }
+        },
+        prerequisites = { "chemical-science-pack", "concrete" },
+        unit =
+        {
+            count = 300,
+            ingredients =
+            {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 }
+            },
+            time = 60
+        }
+    },
+
+    -------------------------------------------------------------------- Space Discovery Techs
+    {
+        type = "technology",
         name = "crucible-system-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/edge-icon-tech.png"),
         icon_size = 256,

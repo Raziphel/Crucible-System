@@ -11,7 +11,7 @@ data:extend({
         to = "crucible-system-edge",
         order = "h",
         length = 4000000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.shattered_planet_trip)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
     },
     {
         type = "space-connection",
@@ -23,6 +23,6 @@ data:extend({
         to = "legion",
         order = "h",
         length = 2000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.shattered_planet_trip)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
     },
 })
