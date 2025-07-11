@@ -27,7 +27,7 @@ PlanetsLib:extend({
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/legion-orbit.png",
-                size = 983,
+                size = 2048,
             }
         },
 
@@ -47,10 +47,34 @@ PlanetsLib:extend({
             gravity = 40
         },
         surface_render_parameters = {
-            day_night_cycle_color_lookup = {
-                { 0.0,  "identity" },
-                { 0.35, "__core__/graphics/color_luts/night.png" },
+            day_night_cycle_color_lookup =
+            {
+                { 0.0,  "__space-age__/graphics/lut/vulcanus-1-day.png" },
+                { 0.20, "__space-age__/graphics/lut/vulcanus-1-day.png" },
+                { 0.45, "__space-age__/graphics/lut/vulcanus-2-night.png" },
+                { 0.55, "__space-age__/graphics/lut/vulcanus-2-night.png" },
+                { 0.80, "__space-age__/graphics/lut/vulcanus-1-day.png" },
+            },
+            terrain_tint_effect =
+            {
+                noise_texture =
+                {
+                    filename = "__space-age__/graphics/terrain/vulcanus/tint-noise.png",
+                    size = 4096
+                },
+
+                offset = { 0.2, 0, 0.4, 0.8 },
+                intensity = { 0.5, 0.2, 0.3, 1.0 },
+                scale_u = { 3, 1, 1, 1 },
+                scale_v = { 1, 1, 1, 1 },
+
+                global_intensity = 0.3,
+                global_scale = 0.1,
+                zoom_factor = 3,
+                zoom_intensity = 0.6
             }
         },
     },
 })
+
+PlanetsLib.borrow_music(data.raw["planet"]["vulcanus"], data.raw["planet"]["legion"])

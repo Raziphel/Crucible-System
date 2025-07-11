@@ -29,7 +29,15 @@ data:extend({
         allow_productivity = true,
         auto_recycle = false,
         hide_from_signal_gui = false,
-        main_product = "iridium-plate"
+        main_product = "iridium-plate",
+        surface_conditions =
+        {
+            {
+                property = "pressure",
+                min = 4000,
+                max = 4000
+            }
+        },
     },
     {
         type = "recipe",
@@ -51,5 +59,13 @@ data:extend({
         allow_productivity = false,
         auto_recycle = false,
         hide_from_signal_gui = false,
+        surface_conditions =
+        {
+            {
+                property = "pressure",
+                min = 4000,
+                max = 4000
+            }
+        },
     },
 })

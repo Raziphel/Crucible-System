@@ -33,7 +33,7 @@ PlanetsLib:extend({
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/crucible-system-edge-orbit.png",
-                size = 4096,
+                size = 3277,
             }
         }
     }

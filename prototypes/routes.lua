@@ -10,7 +10,7 @@ data:extend({
         from = "shattered-planet",
         to = "crucible-system-edge",
         order = "h",
-        length = 300000,
+        length = 4000000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.shattered_planet_trip)
     },
     {

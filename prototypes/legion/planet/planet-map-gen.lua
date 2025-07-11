@@ -1,16 +1,30 @@
-local planet_map_gen = {}
+local planet_map_gen = table.deepcopy(data.raw.planet.vulcanus.map_gen_settings)
 
 planet_map_gen.legion = function()
     return
     {
         starting_area = 2,
-        aux_climate_control = true,
 
-        cliff_settings = {
-            enabled = true,
-            cliff_elevation_interval = 10,
-            cliff_elevation_0 = 5,
-            name = "cliff"
+        cliff_settings =
+        {
+            name = "cliff-vulcanus",
+            cliff_elevation_interval = 120,
+            cliff_elevation_0 = 70
+        },
+
+        property_expression_names =
+        {
+            elevation = "vulcanus_elevation",
+            aux = "vulcanus_aux",
+            moisture = "vulcanus_moisture",
+            temperature = "vulcanus_temperature",
+            cliffiness = "vulcanus_cliffiness",
+            cliff_elevation = "cliff_elevation_from_elevation",
+            enemy_base_radius = "enemy_base_radius",
+            enemy_base_frequency = "enemy_base_frequency",
+            ["decorative:red-pita:probability"] = "gleba_red_pita_probability",
+            ["entity:tungsten-ore:probability"] = "vulcanus_tungsten_ore_probability",
+            ["entity:tungsten-ore:richness"] = "vulcanus_tungsten_ore_richness",
         },
 
         autoplace_controls =
@@ -18,7 +32,8 @@ planet_map_gen.legion = function()
             ["enemy-base"] = { frequency = 1, size = 1, richness = 1 },
             ["uranium-ore"] = { frequency = 0.5, size = 1, richness = 2 },
             ["iridium-ore"] = { frequency = 0.5, size = 2, richness = 3 },
-            ["tungsten_ore"] = { frequency = 1, size = 1, richness = 2 },
+            ["tungsten_ore"] = {},
+            ["vulcanus_volcanism"] = {},
         },
         autoplace_settings = {
             ["tile"] = {
@@ -55,13 +70,14 @@ planet_map_gen.legion = function()
             ["entity"] = {
                 settings = {
                     ["armoured-biter-spawner"] = {},
-                    -- Vulcanus trees
+                    -- Vulcanus
                     ["ashland-lichen-tree"] = { frequency = 0.5, size = 1, richness = 1 },
                     ["ashland-lichen-tree-flaming"] = { frequency = 0.5, size = 1, richness = 1 },
+                    ["crater-cliff"] = {},
                     -- Resources
                     ["uranium-ore"] = {},
                     ["iridium-ore"] = {},
-                    ["tungsten_ore"] = {},
+                    ["tungsten-ore"] = {},
                 }
             },
         }
