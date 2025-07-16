@@ -14,5 +14,8 @@
 	"python-envs.defaultEnvManager": "ms-python.python:system",
 	"python-envs.pythonProjects": [],
 	"explorer.excludeGitIgnore": true,
-	"Lua.workspace.checkThirdParty": "ApplyInMemory"
+	"Lua.workspace.checkThirdParty": "ApplyInMemory",
+	"Lua.workspace.userThirdParty": [
+		"c:\\Users\\blake.cox\\AppData\\Roaming\\Code\\User\\workspaceStorage\\0fccee35bb639598d08a192ff99cec27\\justarandomgeek.factoriomod-debug\\sumneko-3rd"
+	]
 }

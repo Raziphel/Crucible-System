@@ -3,7 +3,7 @@ PlanetsLib:extend({
         type = "space-location",
         name = "geass",
         starmap_icon = "__crucible_system__/graphics/icons/geass-star.png",
-        starmap_icon_size = 512,
+        starmap_icon_size = 4096,
         sprite_only = true,
         orbit = {
             parent = {
@@ -11,9 +11,9 @@ PlanetsLib:extend({
                 name = "star",
             },
             distance = 150,
-            orientation = 0.25
+            orientation = 0.45
         },
-        magnitude = 15,
+        magnitude = 120,
     },
 })
 
@@ -29,7 +29,7 @@ PlanetsLib:extend({
                 name = "geass",
             },
             distance = 40,
-            orientation = 0.75,
+            orientation = 0.25,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/crucible-system-edge-orbit.png",

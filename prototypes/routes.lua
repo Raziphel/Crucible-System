@@ -3,15 +3,15 @@ local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-de
 data:extend({
     {
         type = "space-connection",
-        name = "shattered-planet-to-system-edge",
-        localised_name = "Shattered planet to Crucible system edge",
+        name = "system-edge-to-system-edge",
+        localised_name = "System edge to Crucible system edge",
         subgroup = "planet-connections",
         icon = "__crucible_system__/graphics/icons/edge-icon.png",
-        from = "shattered-planet",
+        from = "solar-system-edge",
         to = "crucible-system-edge",
         order = "h",
-        length = 4000000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+        length = 100000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
     },
     {
         type = "space-connection",
@@ -23,6 +23,6 @@ data:extend({
         to = "legion",
         order = "h",
         length = 2000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
     },
 })
