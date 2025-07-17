@@ -18,30 +18,5 @@ data:extend({
             },
         }
     },
-    {
-        type = "technology",
-        name = "alloy-forge",
-        icon_size = 256,
-        icon = "__crucible_system__/graphics/technology/alloy-forge-tech.png",
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "alloy-forge"
-            },
-
-        },
-        prerequisites = { "iridium-processing" },
-        unit =
-        {
-            count = 1000,
-            ingredients =
-            {
-                { "metallurgic-science-pack", 1 },
-                { "promethium-science-pack",  1 },
-            },
-            time = 60
-        },
-    },
 
 })
