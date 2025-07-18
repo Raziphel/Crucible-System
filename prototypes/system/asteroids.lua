@@ -106,3 +106,27 @@ for size_index, size_name in ipairs(asteroid_sizes) do
         }
     })
 end
+
+
+
+
+local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
+
+
+--  Make this into a function I can just call with a table of asteroids... It will be easier to maintain.
+
+local shattered_nekros_asteroids =
+{
+    {
+        asteroid = "medium-entropium-asteroid",
+        probability = 0.03,
+        angle_when_stopped = 1,
+        speed = asteroid_util.standard_speed,
+    },
+    {
+        asteroid = "big-entropium-asteroid",
+        probability = 0.01,
+        angle_when_stopped = 1,
+        speed = asteroid_util.standard_speed,
+    }
+}

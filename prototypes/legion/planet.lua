@@ -16,7 +16,6 @@ PlanetsLib:extend({
         map_gen_settings = planet_map_gen.legion(),
         pollutant_type = nil,
         solar_power_in_space = 60,
-        tier = 5,
         orbit = {
             parent = {
                 type = "space-location",
@@ -27,7 +26,7 @@ PlanetsLib:extend({
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/legion-orbit.png",
-                size = 2048,
+                size = 983,
             }
         },
 

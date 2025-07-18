@@ -33,7 +33,32 @@ PlanetsLib:extend({
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/crucible-system-edge-orbit.png",
-                size = 3277,
+                size = 4096,
+            }
+        }
+    }
+})
+
+PlanetsLib:extend({
+    {
+        type = "space-location",
+        name = "shattered-nekros",
+        icon = "__crucible_system__/graphics/icons/shattered-nekros.png",
+        starmap_icon = "__crucible_system__/graphics/icons/shattered-nekros.png",
+        starmap_icon_size = 512,
+        solar_power_in_space = 7,
+        asteroid_spawn_definitions = shattered_nekros_asteroids,
+        orbit = {
+            parent = {
+                type = "space-location",
+                name = "geass",
+            },
+            distance = 45,
+            orientation = 0.12,
+            sprite = {
+                type = "sprite",
+                filename = "__crucible_system__/graphics/orbits/shattered-nekros-orbit.png",
+                size = 4096,
             }
         }
     }
