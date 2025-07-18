@@ -44,12 +44,21 @@ data:extend({
         prerequisites = { "promethium-science-pack", "speed-module-3", "productivity-module-3", "efficiency-module-3", "legendary-quality" },
         unit =
         {
-            count = 200,
+            count = 500,
             ingredients =
             {
-                { "promethium-science-pack", 1 },
+                { "automation-science-pack",      1 },
+                { "logistic-science-pack",        1 },
+                { "chemical-science-pack",        1 },
+                { "production-science-pack",      1 },
+                { "utility-science-pack",         1 },
+                { "space-science-pack",           1 },
+                { "metallurgic-science-pack",     1 },
+                { "agricultural-science-pack",    1 },
+                { "electromagnetic-science-pack", 1 },
+                { "cryogenic-science-pack",       1 },
             },
-            time = 60
+            time = 30
         }
     },
     {
@@ -69,13 +78,21 @@ data:extend({
         prerequisites = { "crucible-system-discovery" },
         unit =
         {
-            count = 100,
+            count = 500,
             ingredients =
             {
-                { "metallurgic-science-pack", 10 },
-                { "promethium-science-pack",  1 },
+                { "automation-science-pack",      1 },
+                { "logistic-science-pack",        1 },
+                { "chemical-science-pack",        1 },
+                { "production-science-pack",      1 },
+                { "utility-science-pack",         1 },
+                { "space-science-pack",           1 },
+                { "metallurgic-science-pack",     1 },
+                { "agricultural-science-pack",    1 },
+                { "electromagnetic-science-pack", 1 },
+                { "cryogenic-science-pack",       1 },
             },
-            time = 60
+            time = 30
         }
     },
 })

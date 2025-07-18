@@ -2,6 +2,9 @@
 require("prototypes.system.starsystem")
 require("prototypes.system.routes")
 require("prototypes.system.technology")
+require("prototypes.system.asteroids")
+require("prototypes.system.asteroid-chunks")
+require("prototypes.system.entropic-science-pack")
 -- products
 require("prototypes.products.resources")
 require("prototypes.products.item")

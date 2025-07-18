@@ -1,1 +1,1 @@
-require("prototypes.legion.planet.planet-updates")
+require("prototypes.legion.planet-updates")
