@@ -1,7 +1,6 @@
 
 Simple roadmap of progress in the Crucible System.
 
-// 1. Beat Aquilo
-// 2. Travel to the Solar System Edge
+// 1. Beat Fulgora
 // 3. Travel to the Crucible System Edge 
 // 4. Collect entropium asteroids from shattered-nekros
