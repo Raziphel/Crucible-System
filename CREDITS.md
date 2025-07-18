@@ -45,7 +45,7 @@ MESSAGE TO OTHER MOD MAKERS:
 All licenses were checked and if any content was used credits we're given to everyone even in cases where it wasn't necessary! 
 Please if you have any issues with anything used in this mod contact me on Discord: @Raziphel
 
-Due the things I've used, mod is licences under GPLv3 to comply with all the licenses used.
+Due the things I've used, mod is licenced under GPLv3 to comply with all the licenses used.
 I'm not a lawyer could have easily made a mistake.  Please contact me before taking action, I will absolutely resolve it quickly.
 
 -----------------------------------------------

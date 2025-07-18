@@ -22,7 +22,7 @@ PlanetsLib:extend({
                 name = "geass",
             },
             distance = 12,
-            orientation = 0.15,
+            orientation = 0.1,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/legion-orbit.png",

@@ -11,7 +11,7 @@ data:extend({
         from = "fulgora",
         to = "crucible-system-edge",
         order = "h",
-        length = 100000,
+        length = 40000,
         asteroid_spawn_definitions = asteroid_fields.fulgora_to_crucible_edge_asteroids
     },
     { -- Crucible System Edge to Legion
@@ -23,7 +23,7 @@ data:extend({
         from = "crucible-system-edge",
         to = "legion",
         order = "h",
-        length = 15000,
+        length = 40000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
     },
     { -- Crucible System Edge to Shattered Nekros
@@ -35,7 +35,7 @@ data:extend({
         from = "crucible-system-edge",
         to = "shattered-nekros",
         order = "h",
-        length = 2000,
+        length = 10000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
     },
     { -- Shattered Nekros to Legion
@@ -47,7 +47,7 @@ data:extend({
         from = "shattered-nekros",
         to = "legion",
         order = "h",
-        length = 13000,
+        length = 20000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
     },
 })

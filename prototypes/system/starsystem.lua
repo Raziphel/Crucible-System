@@ -10,7 +10,7 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "star",
             },
-            distance = 120,
+            distance = 103,
             orientation = 0.45
         },
         magnitude = 120,
@@ -29,7 +29,7 @@ PlanetsLib:extend({
                 name = "geass",
             },
             distance = 50,
-            orientation = 0.05,
+            orientation = 0.0,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/crucible-system-edge-orbit.png",
@@ -57,7 +57,7 @@ PlanetsLib:extend({
                 name = "geass",
             },
             distance = 45,
-            orientation = 0.12,
+            orientation = 0.08,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/shattered-nekros-orbit.png",

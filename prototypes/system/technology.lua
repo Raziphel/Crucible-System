@@ -13,10 +13,10 @@ data:extend({
                 use_icon_overlay_constant = true
             },
         },
-        prerequisites = { "planet-discovery-aquilo" },
+        prerequisites = { "electromagnetic-science-pack", "agricultural-science-pack", "metallurgic-science-pack", "utility-science-pack", "productivity-science-pack" },
         unit =
         {
-            count = 500,
+            count = 2000,
             ingredients =
             {
                 { "automation-science-pack",      1 },
@@ -28,9 +28,8 @@ data:extend({
                 { "metallurgic-science-pack",     1 },
                 { "agricultural-science-pack",    1 },
                 { "electromagnetic-science-pack", 1 },
-                { "cryogenic-science-pack",       1 },
             },
-            time = 30
+            time = 60
         }
     },
     {
@@ -50,12 +49,12 @@ data:extend({
         prerequisites = { "crucible-system-discovery" },
         unit =
         {
-            count = 50,
+            count = 100,
             ingredients =
             {
                 { "entropic-science-pack", 1 },
             },
-            time = 30
+            time = 60
         }
     },
     {
@@ -75,7 +74,7 @@ data:extend({
         prerequisites = { "crucible-system-discovery" },
         unit =
         {
-            count = 200,
+            count = 1000,
             ingredients =
             {
                 { "entropic-science-pack", 1 },

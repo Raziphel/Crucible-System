@@ -196,15 +196,12 @@ local fulgora_to_crucible_edge_asteroids = create_connection_asteroid_field({
     -- Metallic asteroids
     { name = "small-metallic-asteroid",  spawn_count = 7 },
     { name = "medium-metallic-asteroid", spawn_count = 5 },
-    { name = "big-metallic-asteroid",    spawn_count = 3 },
     -- Oxide asteroids
     { name = "small-oxide-asteroid",     spawn_count = 7 },
     { name = "medium-oxide-asteroid",    spawn_count = 5 },
-    { name = "big-oxide-asteroid",       spawn_count = 3 },
     -- Carbonic asteroids
     { name = "small-carbonic-asteroid",  spawn_count = 7 },
     { name = "medium-carbonic-asteroid", spawn_count = 5 },
-    { name = "big-carbonic-asteroid",    spawn_count = 3 },
 })
 
 
@@ -213,19 +210,15 @@ local shattered_nekros_asteroids = create_location_asteroid_field({
     { name = "small-entropium-asteroid",  probability = 0.05 },
     { name = "medium-entropium-asteroid", probability = 0.04 },
     { name = "big-entropium-asteroid",    probability = 0.03 },
-    { name = "huge-entropium-asteroid",   probability = 0.02 },
     -- Metallic asteroids
     { name = "small-metallic-asteroid",   probability = 0.01 },
     { name = "medium-metallic-asteroid",  probability = 0.01 },
-    { name = "big-metallic-asteroid",     probability = 0.01 },
     -- Oxide asteroids
     { name = "small-oxide-asteroid",      probability = 0.01 },
     { name = "medium-oxide-asteroid",     probability = 0.01 },
-    { name = "big-oxide-asteroid",        probability = 0.01 },
     -- Carbonic asteroids
     { name = "small-carbonic-asteroid",   probability = 0.01 },
     { name = "medium-carbonic-asteroid",  probability = 0.01 },
-    { name = "big-carbonic-asteroid",     probability = 0.01 },
 })
 
 return {

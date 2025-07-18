@@ -46,6 +46,14 @@ local entropic_science_pack_recipe = {
     auto_recycle = false,
     hide_from_signal_gui = false,
     main_product = "entropic-science-pack",
+    surface_conditions =
+    {
+        {
+            property = "pressure",
+            min = 0,
+            max = 0
+        }
+    },
 }
 
 

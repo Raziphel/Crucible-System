@@ -2,5 +2,6 @@
 Simple roadmap of progress in the Crucible System.
 
 // 1. Beat Fulgora
-// 3. Travel to the Crucible System Edge 
-// 4. Collect entropium asteroids from shattered-nekros
+// 2. Travel to the Crucible System Edge 
+// 3. Collect entropium asteroids 
+// 4. Use Entropium to create Entropic Science Pack
