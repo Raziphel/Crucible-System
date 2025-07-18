@@ -29,7 +29,7 @@ PlanetsLib:extend({
                 name = "geass",
             },
             distance = 50,
-            orientation = 0.25,
+            orientation = 0.05,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/crucible-system-edge-orbit.png",

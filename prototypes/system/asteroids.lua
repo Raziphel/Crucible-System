@@ -75,7 +75,7 @@ for size_index, size_name in ipairs(asteroid_sizes) do
         {
             type = size_name == "chunk" and "asteroid-chunk" or "asteroid",
             name = name,
-            icon = "__crucible_system__/graphics/entity/asteroids/" .. name .. ".png",
+            icon = "__crucible_system__/graphics/entity/asteroids/chunk-entropium-asteroid.png",
             icon_size = 64,
             localised_description = { "entity-description." .. asteroid_type .. "-asteroid" },
             graphics_set = asteroid_graphics_set(0.0003 * (6 - size_index), variations),

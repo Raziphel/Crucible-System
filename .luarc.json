@@ -23,6 +23,7 @@
     "diagnostics.disable": [
         "undefined-field",
         "undefined-global",
-        "inject-field"
+        "inject-field",
+        "need-check-nil"
     ]
 }

@@ -12,24 +12,43 @@ local flask = quality_glassware.request_flask(
 local entropic_technology = {
     type = "technology",
     name = "entropic-science-pack",
-    unit = {
-        time = 30,
-        count = 10,
-        ingredients =
-        {
-            { "automation-science-pack",      1 },
-            { "logistic-science-pack",        1 },
-            { "chemical-science-pack",        1 },
-            { "production-science-pack",      1 },
-            { "utility-science-pack",         1 },
-            { "space-science-pack",           1 },
-            { "metallurgic-science-pack",     1 },
-            { "agricultural-science-pack",    1 },
-            { "electromagnetic-science-pack", 1 },
-            { "cryogenic-science-pack",       1 },
-        },
+    prerequisites = { "cryogenic-science-pack" },
+    research_trigger =
+    {
+        type = "mine-entity",
+        entity = "small-entropium-asteroid"
     },
+    effects =
+    {
+        {
+            type = "unlock-recipe",
+            recipe = "entropic-science-pack-recipe"
+        },
+    }
 }
+
+local entropic_science_pack_recipe = {
+    type = "recipe",
+    name = "entropic-science-pack-recipe",
+    category = "crafting",
+    energy_required = 250,
+    ingredients = {
+        { type = "item", name = "entropium-asteroid-chunk", amount = 10 },
+        { type = "item", name = "space-science-pack",       amount = 1 },
+    },
+    results = {
+        { type = "item", name = "entropic-science-pack", amount = 1 },
+    },
+    subgroup = "science-pack",
+    order = "b-a-a",
+    enabled = false,
+    allow_productivity = true,
+    auto_recycle = false,
+    hide_from_signal_gui = false,
+    main_product = "entropic-science-pack",
+}
+
+
 
 local entropic_science_pack = {
     type = "tool",
@@ -52,7 +71,7 @@ entropic_science_pack.icons = {
 }
 
 -- Add the prototypes to the game
-data:extend({ entropic_science_pack, entropic_technology })
+data:extend({ entropic_science_pack, entropic_technology, entropic_science_pack_recipe })
 
 -- Tell the lab it can consume this science pack
 local lab_inputs = data.raw.lab.lab.inputs
