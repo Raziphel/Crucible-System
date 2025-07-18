@@ -10,7 +10,7 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "star",
             },
-            distance = 150,
+            distance = 120,
             orientation = 0.45
         },
         magnitude = 120,
@@ -39,15 +39,18 @@ PlanetsLib:extend({
     }
 })
 
+local asteroid_fields = require("__crucible_system__/prototypes/system/asteroids")
+
 PlanetsLib:extend({
     {
         type = "space-location",
         name = "shattered-nekros",
         icon = "__crucible_system__/graphics/icons/shattered-nekros.png",
+        icon_size = 512,
         starmap_icon = "__crucible_system__/graphics/icons/shattered-nekros.png",
         starmap_icon_size = 512,
         solar_power_in_space = 7,
-        asteroid_spawn_definitions = shattered_nekros_asteroids,
+        asteroid_spawn_definitions = asteroid_fields.shattered_nekros_asteroids,
         orbit = {
             parent = {
                 type = "space-location",

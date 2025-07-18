@@ -108,25 +108,131 @@ for size_index, size_name in ipairs(asteroid_sizes) do
 end
 
 
-
-
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 
+-- Random spawn point generator
+local function random_spawn_points(count, probability_range, distance_range)
+    local points = {}
 
---  Make this into a function I can just call with a table of asteroids... It will be easier to maintain.
+    -- Step 1: generate unsorted list of distances
+    local distances = {}
+    for _ = 1, count do
+        table.insert(distances, math.random(distance_range.min, distance_range.max))
+    end
 
-local shattered_nekros_asteroids =
-{
-    {
-        asteroid = "medium-entropium-asteroid",
-        probability = 0.03,
-        angle_when_stopped = 1,
-        speed = asteroid_util.standard_speed,
-    },
-    {
-        asteroid = "big-entropium-asteroid",
-        probability = 0.01,
-        angle_when_stopped = 1,
-        speed = asteroid_util.standard_speed,
-    }
+    -- Step 2: sort and force ascending
+    table.sort(distances)
+    for i = 2, #distances do
+        if distances[i] <= distances[i - 1] then
+            distances[i] = distances[i - 1] + 1
+        end
+    end
+
+    -- Step 3: create spawn points
+    for i = 1, count do
+        table.insert(points, {
+            position = math.random(),
+            probability = math.random() * (probability_range.max - probability_range.min) + probability_range.min,
+            angle_when_stopped = 1,
+            speed = asteroid_util.standard_speed,
+            distance = distances[i]
+        })
+    end
+
+    return points
+end
+
+
+-- Create asteroid field with specified data
+function create_location_asteroid_field(data)
+    local result = {}
+    for _, entry in ipairs(data) do
+        table.insert(result, {
+            asteroid = entry.name,
+            probability = entry.probability or 0.5,
+            angle_when_stopped = 1,
+            speed = asteroid_util.standard_speed
+        })
+    end
+    return result
+end
+
+-- Create asteroid field with spawn points
+function create_connection_asteroid_field(data)
+    local result = {}
+    for _, entry in ipairs(data) do
+        local spawns = entry.spawn_count
+            and random_spawn_points(
+                entry.spawn_count,
+                entry.prob_range or { min = 0.2, max = 0.6 },
+                entry.dist_range or { min = 50, max = 500 }
+            )
+            or {
+                {
+                    position = 0.5,
+                    probability = entry.probability or 0.5,
+                    angle_when_stopped = 1,
+                    speed = asteroid_util.standard_speed,
+                    distance = 250
+                }
+            }
+
+        -- ✅ Sort distances in ascending order (required by Factorio)
+        table.sort(spawns, function(a, b)
+            return a.distance < b.distance
+        end)
+
+        table.insert(result, {
+            asteroid = entry.name,
+            spawn_points = spawns
+        })
+    end
+    return result
+end
+
+local fulgora_to_crucible_edge_asteroids = create_connection_asteroid_field({
+    -- Entropium asteroids
+    { name = "small-entropium-asteroid", spawn_count = 3 },
+    -- Metallic asteroids
+    { name = "small-metallic-asteroid",  spawn_count = 7 },
+    { name = "medium-metallic-asteroid", spawn_count = 5 },
+    { name = "big-metallic-asteroid",    spawn_count = 3 },
+    -- Oxide asteroids
+    { name = "small-oxide-asteroid",     spawn_count = 7 },
+    { name = "medium-oxide-asteroid",    spawn_count = 5 },
+    { name = "big-oxide-asteroid",       spawn_count = 3 },
+    -- Carbonic asteroids
+    { name = "small-carbonic-asteroid",  spawn_count = 7 },
+    { name = "medium-carbonic-asteroid", spawn_count = 5 },
+    { name = "big-carbonic-asteroid",    spawn_count = 3 },
+})
+
+
+local shattered_nekros_asteroids = create_location_asteroid_field({
+    -- Entropium asteroids
+    { name = "small-entropium-asteroid",  probability = 0.05 },
+    { name = "medium-entropium-asteroid", probability = 0.04 },
+    { name = "big-entropium-asteroid",    probability = 0.03 },
+    { name = "huge-entropium-asteroid",   probability = 0.02 },
+    -- Metallic asteroids
+    { name = "small-metallic-asteroid",   probability = 0.01 },
+    { name = "medium-metallic-asteroid",  probability = 0.01 },
+    { name = "big-metallic-asteroid",     probability = 0.01 },
+    -- Oxide asteroids
+    { name = "small-oxide-asteroid",      probability = 0.01 },
+    { name = "medium-oxide-asteroid",     probability = 0.01 },
+    { name = "big-oxide-asteroid",        probability = 0.01 },
+    -- Carbonic asteroids
+    { name = "small-carbonic-asteroid",   probability = 0.01 },
+    { name = "medium-carbonic-asteroid",  probability = 0.01 },
+    { name = "big-carbonic-asteroid",     probability = 0.01 },
+})
+
+return {
+    fulgora_to_crucible_edge_asteroids = fulgora_to_crucible_edge_asteroids,
+    shattered_nekros_asteroids = shattered_nekros_asteroids
 }
+
+
+-- I genuinely can't tell if this is good or horrible...  Probably a bit of both.
+-- I mean, it works, but it's a bit of a mess.
