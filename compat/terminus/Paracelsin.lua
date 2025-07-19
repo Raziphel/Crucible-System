@@ -24,7 +24,7 @@ PlanetsLib:update({
 
 deleteRoute("fulgora-paracelsin")
 deleteRoute("nauvis-paracelsin")
-deleteRoute("aquilo-solar-system-edge")
+deleteRoute("paracelsin-solar-system-edge")
 
 data:extend({
     {

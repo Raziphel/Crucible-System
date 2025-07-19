@@ -17,7 +17,7 @@ PlanetsLib:update({
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/orbit_23.png",
-                size = 4096,
+                size = 2048,
             },
         }
     }

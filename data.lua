@@ -31,5 +31,6 @@ require("compat.noctyra.cubium")
 
 require("compat.terminus.tenebris-prime")
 require("compat.terminus.Paracelsin")
+require("compat.terminus.secretas")
 
 require("compat.crucible.corrundum")
