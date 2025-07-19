@@ -22,15 +22,3 @@ require("prototypes.legion.planet-updates")
 
 -- Compat
 require("compat.space-age")
-require("compat.terrapalus")
-require("compat.systems.dea-dia-system")
-
-require("compat.eidolon.maraxsis")
-
-require("compat.noctyra.cubium")
-
-require("compat.terminus.tenebris-prime")
-require("compat.terminus.Paracelsin")
-require("compat.terminus.secretas")
-
-require("compat.crucible.corrundum")

@@ -18,7 +18,7 @@ PlanetsLib:update({
     }
 })
 
--- move Aquilo, edge and shattered planet to terminus system
+-- move Aquilo, edge and shattered planet to crucible system
 PlanetsLib:update({
     {
         type = "planet",
@@ -26,13 +26,13 @@ PlanetsLib:update({
         orbit = {
             parent = {
                 type = "space-location",
-                name = "terminus",
+                name = "crucible",
             },
-            distance = 35,
-            orientation = 0.7,
+            distance = 45,
+            orientation = 0.25,
             sprite = {
                 type = "sprite",
-                filename = "__crucible_system__/graphics/orbits/orbit_35.png",
+                filename = "__crucible_system__/graphics/orbits/orbit_45.png",
                 size = 4096,
             },
         }
@@ -46,7 +46,7 @@ PlanetsLib:update({
         orbit = {
             parent = {
                 type = "space-location",
-                name = "terminus",
+                name = "crucible",
             },
             distance = 50,
             orientation = 0.25,
@@ -66,7 +66,7 @@ PlanetsLib:update({
         orbit = {
             parent = {
                 type = "space-location",
-                name = "terminus",
+                name = "crucible",
             },
             distance = 150,
             orientation = 0.25
@@ -76,7 +76,6 @@ PlanetsLib:update({
 
 deleteRoute("gleba-aquilo")
 deleteRoute("fulgora-aquilo")
-deleteRoute("aquilo-solar-system-edge")
 
 data:extend({
     {
@@ -92,10 +91,10 @@ data:extend({
     },
     {
         type = "space-connection",
-        name = "terminus-to-aquilo",
+        name = "crucible-to-aquilo",
         subgroup = "planet-connections",
         icon = "__space-age__/graphics/icons/solar-system-edge.png",
-        from = "sye-terminus",
+        from = "sye-crucible",
         to = "aquilo",
         order = "h",
         length = 30000,

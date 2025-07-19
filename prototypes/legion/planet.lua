@@ -22,7 +22,7 @@ PlanetsLib:extend({
                 name = "crucible",
             },
             distance = 12,
-            orientation = 0.1,
+            orientation = -0.2,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/orbit_12.png",

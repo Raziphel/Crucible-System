@@ -23,14 +23,6 @@ AndreusAxolotl for 'Age of Produiction'.
 Earendel for 'Alien Biomes Graphics'.
 CybranM for 'Armoured Biters'.
 Hornwitser for 'Quality Glassware'.
-Frontrider for 'Dea Dea System'.
-MeteorSwarm for 'Tenebris Prime'.
-AndreusAxolotl for 'Paracelsin'
-
-CREDITS FOR OPTIONAL MODS:
-thesixthroc for 'Cerys'
-MeteorSwarm for 'Muluna'
-Lukah for 'Terra Palus'
 
 ------------------------------------------------------------------------------------
 

@@ -4,7 +4,6 @@ data:extend({
         name = "crucible-system-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/edge-icon-tech.png"),
         icon_size = 256,
-        essential = true,
         effects =
         {
             {
@@ -37,7 +36,6 @@ data:extend({
         name = "shattered-nekros-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/shattered-nekros-tech.png"),
         icon_size = 256,
-        essential = true,
         effects =
         {
             {
@@ -62,7 +60,6 @@ data:extend({
         name = "legion-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/legion-tech.png"),
         icon_size = 256,
-        essential = true,
         effects =
         {
             {

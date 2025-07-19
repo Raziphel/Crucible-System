@@ -39,8 +39,8 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "star",
             },
-            distance = 195,
-            orientation = 0.35
+            distance = 120,
+            orientation = 0.3
         },
         magnitude = 120,
     },
@@ -58,7 +58,7 @@ PlanetsLib:extend({
                 name = "crucible",
             },
             distance = 50,
-            orientation = 0.0,
+            orientation = -0.3,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/orbit_50.png",
@@ -84,7 +84,7 @@ PlanetsLib:extend({
                 name = "crucible",
             },
             distance = 45,
-            orientation = 0.08,
+            orientation = -0.2,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/orbit_45.png",
@@ -95,140 +95,7 @@ PlanetsLib:extend({
 })
 
 
---Adds Eidolon Star
-PlanetsLib:extend({
-    {
-        type = "space-location",
-        name = "eidolon",
-        starmap_icon = "__crucible_system__/graphics/icons/eidolon.png",
-        starmap_icon_size = 4096,
-        orbit = {
-            parent = {
-                type = "space-location",
-                name = "star",
-            },
-            distance = 150,
-            orientation = 0.25,
-        },
-        sprite_only = true,
-        magnitude = 120,
-        redrawn_connections_exclude = true,
-    },
-})
-
-PlanetsLib:extend({
-    {
-        type = "space-location",
-        name = "sye-eidolon",
-        icon = "__space-age__/graphics/icons/solar-system-edge.png",
-        solar_power_in_space = 15,
-        orbit = {
-            parent = {
-                type = "space-location",
-                name = "eidolon",
-            },
-            distance = 35,
-            orientation = 0.55,
-            sprite = {
-                type = "sprite",
-                filename = "__crucible_system__/graphics/orbits/orbit_35.png",
-                size = 4096,
-            },
-        }
-    }
-})
-
---Adds Noctyra Star
-PlanetsLib:extend({
-    {
-        type = "space-location",
-        name = "noctyra",
-        starmap_icon = "__crucible_system__/graphics/icons/noctyra.png",
-        starmap_icon_size = 4096,
-        orbit = {
-            parent = {
-                type = "space-location",
-                name = "star",
-            },
-            distance = 128,
-            orientation = 0.45,
-        },
-        sprite_only = true,
-        magnitude = 120,
-        redrawn_connections_exclude = true,
-    },
-})
-
-PlanetsLib:extend({
-    {
-        type = "space-location",
-        name = "sye-noctyra",
-        icon = "__space-age__/graphics/icons/solar-system-edge.png",
-        solar_power_in_space = 15,
-        orbit = {
-            parent = {
-                type = "space-location",
-                name = "noctyra",
-            },
-            distance = 25,
-            orientation = 0.05,
-            sprite = {
-                type = "sprite",
-                filename = "__crucible_system__/graphics/orbits/orbit_25.png",
-                size = 2048,
-            },
-        },
-    }
-})
-
-
---Adds Terminus Star
-PlanetsLib:extend({
-    {
-        type = "space-location",
-        name = "terminus",
-        starmap_icon = "__crucible_system__/graphics/icons/terminus.png",
-        starmap_icon_size = 4096,
-        orbit = {
-            parent = {
-                type = "space-location",
-                name = "star",
-            },
-            distance = 300,
-            orientation = 0.27,
-        },
-        sprite_only = true,
-        magnitude = 120,
-        redrawn_connections_exclude = true,
-    },
-})
-
-PlanetsLib:extend({
-    {
-        type = "space-location",
-        name = "sye-terminus",
-        icon = "__space-age__/graphics/icons/solar-system-edge.png",
-        solar_power_in_space = 5,
-        orbit = {
-            parent = {
-                type = "space-location",
-                name = "terminus",
-            },
-            distance = 50,
-            orientation = 0.75,
-            sprite = {
-                type = "sprite",
-                filename = "__crucible_system__/graphics/orbits/orbit_50.png",
-                size = 4096,
-            },
-        },
-    }
-})
-
-
-
 -- Now begins the connections!
--- Mostly Crucibles - Rest we're moved to compat
 
 data:extend({
     { -- Fulgora to Nauvis
@@ -238,6 +105,17 @@ data:extend({
         icon = "__crucible_system__/graphics/icons/edge-icon.png",
         from = "fulgora",
         to = "sye-nauvis",
+        order = "h",
+        length = 10000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+    },
+    { -- Nauvis to Crucible
+        type = "space-connection",
+        name = "sye-nauvis-to-sye-crucible",
+        subgroup = "planet-connections",
+        icon = "__crucible_system__/graphics/icons/edge-icon.png",
+        from = "sye-nauvis",
+        to = "sye-crucible",
         order = "h",
         length = 10000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
