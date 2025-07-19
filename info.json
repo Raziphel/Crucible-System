@@ -12,7 +12,15 @@
         "alien-biomes-graphics >= 0.7.1",
         "ArmouredBiters >= 1.2.1",
         "Age-of-Production >= 1.6.22",
-        "quality_glassware >= 0.1.0"
+        "quality_glassware >= 0.1.0",
+        "dea-dia-system >= 0.30.2",
+        "corrundum >= 1.0.40",
+        "? castra",
+        "? any-planet-start",
+        "! Tiered-Solar-System",
+        "! SolarSystems",
+        "! SolarSystems-Fork",
+        "! Starmap_Nexuz"
     ],
     "space_travel_required": true,
     "spoiling_required": true,

@@ -12,6 +12,7 @@ CREDITS TO:
 Bartz24 for 'Planet Castra' concept and graphics. (Edited Millerite graphics for Iridium)
 Rjdunlap for all of his planet mods, used noise expressions and concepts for some planet generation.
 Spartanlaser32 for the 'More Asteroids' mod, used to for understanding asteroid generation.
+TheTwonky and angellusmortis for 'Solar Systems' & 'Interstellar Travel' which was used to know how to create the other systems.
 
 -----------------------------------------------
 
@@ -21,12 +22,19 @@ AndreusAxolotl for 'Age of Produiction'.
 Earendel for 'Alien Biomes Graphics'.
 CybranM for 'Armoured Biters'.
 Hornwitser for 'Quality Glassware'.
+Frontrider for 'Dea Dea System'.
+
+CREDITS FOR OPTIONAL MODS:
+
 
 -----------------------------------------------
 
 DISCLAIMER OF SHAME:
 Some graphics (mostly planet/space) we're generated using ChatGPT.
 It's a free mod and I can't draw; cut me some slack.
+
+An AI upscaling tool was used for quite a few graphics as well!
+(https://github.com/Nenotriple/gimp_upscale)
 
 -----------------------------------------------
 

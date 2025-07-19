@@ -19,13 +19,13 @@ PlanetsLib:extend({
         orbit = {
             parent = {
                 type = "space-location",
-                name = "geass",
+                name = "crucible",
             },
             distance = 12,
             orientation = 0.1,
             sprite = {
                 type = "sprite",
-                filename = "__crucible_system__/graphics/orbits/legion-orbit.png",
+                filename = "__crucible_system__/graphics/orbits/orbit_12.png",
                 size = 983,
             }
         },

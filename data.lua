@@ -1,10 +1,10 @@
--- System
-require("prototypes.system.starsystem")
-require("prototypes.system.routes")
-require("prototypes.system.technology")
-require("prototypes.system.asteroids")
-require("prototypes.system.asteroid-chunks")
-require("prototypes.system.entropic-science-pack")
+-- The Universe
+require("prototypes.universe")
+-- Crucible System
+require("prototypes.crucible.technology")
+require("prototypes.crucible.asteroids")
+require("prototypes.crucible.asteroid-chunks")
+require("prototypes.crucible.entropic-science-pack")
 -- products
 require("prototypes.products.resources")
 require("prototypes.products.item")
@@ -16,3 +16,6 @@ require("prototypes.legion.technology")
 require("prototypes.legion.planet")
 require("prototypes.legion.autoplace-controls")
 require("prototypes.legion.planet-updates")
+-- Compat
+require("compat.systems.dea-dia-system")
+require("compat.crucible.corrundum")
