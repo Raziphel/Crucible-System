@@ -1,0 +1,104 @@
+require "util"
+
+local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
+
+-- flip gleba to be south of Nauvia/Fulgora instead of north
+PlanetsLib:update({
+    {
+        type = "planet",
+        name = "gleba",
+        orbit = {
+            parent = {
+                type = "space-location",
+                name = "star",
+            },
+            distance = 20,
+            orientation = 0.45,
+        }
+    }
+})
+
+-- move Aquilo, edge and shattered planet to terminus system
+PlanetsLib:update({
+    {
+        type = "planet",
+        name = "aquilo",
+        orbit = {
+            parent = {
+                type = "space-location",
+                name = "terminus",
+            },
+            distance = 35,
+            orientation = 0.7,
+            sprite = {
+                type = "sprite",
+                filename = "__crucible_system__/graphics/orbits/orbit_35.png",
+                size = 4096,
+            },
+        }
+    }
+})
+
+PlanetsLib:update({
+    {
+        type = "space-location",
+        name = "solar-system-edge",
+        orbit = {
+            parent = {
+                type = "space-location",
+                name = "terminus",
+            },
+            distance = 50,
+            orientation = 0.25,
+            sprite = {
+                type = "sprite",
+                filename = "__crucible_system__/graphics/orbits/orbit_50.png",
+                size = 4096,
+            },
+        }
+    }
+})
+
+PlanetsLib:update({
+    {
+        type = "space-location",
+        name = "shattered-planet",
+        orbit = {
+            parent = {
+                type = "space-location",
+                name = "terminus",
+            },
+            distance = 150,
+            orientation = 0.25
+        }
+    }
+})
+
+deleteRoute("gleba-aquilo")
+deleteRoute("fulgora-aquilo")
+deleteRoute("aquilo-solar-system-edge")
+
+data:extend({
+    {
+        type = "space-connection",
+        name = "gleba-to-system-edge",
+        subgroup = "planet-connections",
+        icon = "__space-age__/graphics/icons/solar-system-edge.png",
+        from = "gleba",
+        to = "sye-nauvis",
+        order = "h",
+        length = 20000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_fulgora)
+    },
+    {
+        type = "space-connection",
+        name = "terminus-to-aquilo",
+        subgroup = "planet-connections",
+        icon = "__space-age__/graphics/icons/solar-system-edge.png",
+        from = "sye-terminus",
+        to = "aquilo",
+        order = "h",
+        length = 30000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_aquilo)
+    }
+})

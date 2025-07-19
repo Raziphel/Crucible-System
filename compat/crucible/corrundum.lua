@@ -14,8 +14,6 @@ PlanetsLib:update({
             },
             distance = 22,
             orientation = 0.85,
-            -- distance = 20,
-            -- orientation = 0.0,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/orbit_22.png",

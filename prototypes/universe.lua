@@ -1,6 +1,6 @@
 require "const"
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
-local asteroid_fields = require("__crucible_system__/prototypes/system/asteroids")
+local asteroid_fields = require("__crucible_system__/prototypes/crucible/asteroids")
 
 --Adds a new location for interstellar travel in nauvis
 PlanetsLib:extend({
@@ -15,12 +15,12 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "star",
             },
-            distance = 25,
+            distance = 35,
             orientation = 0.4,
             sprite = {
                 type = "sprite",
-                filename = "__crucible_system__/graphics/orbits/orbit_25.png",
-                size = 2048,
+                filename = "__crucible_system__/graphics/orbits/orbit_35.png",
+                size = 4096,
             },
         },
     }
@@ -39,8 +39,8 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "star",
             },
-            distance = 150,
-            orientation = 0.45
+            distance = 195,
+            orientation = 0.35
         },
         magnitude = 120,
     },
@@ -127,12 +127,12 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "eidolon",
             },
-            distance = 25,
+            distance = 35,
             orientation = 0.55,
             sprite = {
                 type = "sprite",
-                filename = "__crucible_system__/graphics/orbits/orbit_25.png",
-                size = 2048,
+                filename = "__crucible_system__/graphics/orbits/orbit_35.png",
+                size = 4096,
             },
         }
     }
@@ -144,14 +144,14 @@ PlanetsLib:extend({
         type = "space-location",
         name = "noctyra",
         starmap_icon = "__crucible_system__/graphics/icons/noctyra.png",
-        starmap_icon_size = 4095,
+        starmap_icon_size = 4096,
         orbit = {
             parent = {
                 type = "space-location",
                 name = "star",
             },
-            distance = 195,
-            orientation = 0.35,
+            distance = 150,
+            orientation = 0.45,
         },
         sprite_only = true,
         magnitude = 120,
@@ -195,7 +195,7 @@ PlanetsLib:extend({
                 name = "star",
             },
             distance = 300,
-            orientation = 0.25,
+            orientation = 0.27,
         },
         sprite_only = true,
         magnitude = 120,
@@ -233,7 +233,7 @@ PlanetsLib:extend({
 data:extend({
     { -- Fulgora to Nauvis
         type = "space-connection",
-        name = "nauvis-to-system-edge",
+        name = "fulgora-to-sye-nauvis",
         subgroup = "planet-connections",
         icon = "__crucible_system__/graphics/icons/edge-icon.png",
         from = "fulgora",

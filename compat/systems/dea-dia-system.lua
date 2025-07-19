@@ -16,8 +16,8 @@ PlanetsLib:update({
                 type = "space-location",
                 name = "star",
             },
-            distance = 110,
-            orientation = 0.35,
+            distance = 100,
+            orientation = 0.335,
         },
         redrawn_connections_exclude = true,
     }
@@ -68,7 +68,7 @@ PlanetsLib:update({
                 name = "planet-dea-dia",
             },
             distance = 5,
-            orientation = 0.1,
+            orientation = 0.13,
             sprite = {
                 type = "sprite",
                 filename = "__dea-dia-system__/graphics/orbits/orbit-lemures.png",
