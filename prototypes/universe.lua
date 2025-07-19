@@ -15,7 +15,7 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "star",
             },
-            distance = 35,
+            distance = 34,
             orientation = 0.4,
             sprite = {
                 type = "sprite",
@@ -171,7 +171,7 @@ PlanetsLib:extend({
                 name = "noctyra",
             },
             distance = 25,
-            orientation = 0.85,
+            orientation = 0.05,
             sprite = {
                 type = "sprite",
                 filename = "__crucible_system__/graphics/orbits/orbit_25.png",
