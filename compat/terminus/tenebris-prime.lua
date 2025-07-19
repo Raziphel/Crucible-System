@@ -12,7 +12,7 @@ PlanetsLib:update({
                 type = "space-location",
                 name = "terminus",
             },
-            distance = ,
+            distance = 88,
             orientation = 0.75,
             sprite = {
                 type = "sprite",
