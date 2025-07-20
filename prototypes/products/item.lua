@@ -35,4 +35,18 @@ data:extend({
         default_import_location = "legion",
         weight = 10 * kg
     },
+    {
+        type = "item",
+        name = "shale-ore",
+        icon = "__crucible_system__/graphics/icons/shale-ore.png",
+        subgroup = "legion-processes",
+        color_hint = { text = "T" },
+        order = "c[raw-shale]-a[raw-shale]",
+        inventory_move_sound = item_sounds.resource_inventory_move,
+        pick_sound = item_sounds.resource_inventory_pickup,
+        drop_sound = item_sounds.resource_inventory_move,
+        stack_size = 50,
+        default_import_location = "legion",
+        weight = 10 * kg
+    },
 })

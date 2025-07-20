@@ -19,7 +19,6 @@ TheTwonky and angellusmortis for 'Solar Systems' & 'Interstellar Travel' which w
 
 CREDITS FOR REQUIRED MODS:
 thesixthrock for 'PlanetsLib'.
-AndreusAxolotl for 'Age of Produiction'.
 Earendel for 'Alien Biomes Graphics'.
 CybranM for 'Armoured Biters'.
 Hornwitser for 'Quality Glassware'.

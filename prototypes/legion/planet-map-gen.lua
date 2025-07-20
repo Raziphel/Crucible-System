@@ -3,8 +3,6 @@ local planet_map_gen = table.deepcopy(data.raw.planet.vulcanus.map_gen_settings)
 planet_map_gen.legion = function()
     return
     {
-        starting_area = 2,
-
         cliff_settings =
         {
             name = "cliff-vulcanus",
@@ -22,17 +20,15 @@ planet_map_gen.legion = function()
             cliff_elevation = "cliff_elevation_from_elevation",
             enemy_base_radius = "enemy_base_radius",
             enemy_base_frequency = "enemy_base_frequency",
-            ["decorative:red-pita:probability"] = "gleba_red_pita_probability",
-            ["entity:tungsten-ore:probability"] = "vulcanus_tungsten_ore_probability",
-            ["entity:tungsten-ore:richness"] = "vulcanus_tungsten_ore_richness",
         },
 
         autoplace_controls =
         {
-            ["enemy-base"] = { frequency = 3, size = 3, richness = 1 },
+            ["enemy-base"] = { frequency = 1, size = 1, richness = 1 },
             ["uranium-ore"] = { frequency = 0.5, size = 1, richness = 2 },
             ["iridium-ore"] = { frequency = 0.5, size = 2, richness = 3 },
-            ["tungsten_ore"] = {},
+            ["shale-ore"] = { frequency = 1.5, size = 3, richness = 3 },
+            ["legion-starting-area"] = { frequency = 1.5, size = 3, richness = 3 },
             ["vulcanus_volcanism"] = {},
         },
         autoplace_settings = {
@@ -77,7 +73,7 @@ planet_map_gen.legion = function()
                     -- Resources
                     ["uranium-ore"] = {},
                     ["iridium-ore"] = {},
-                    ["tungsten-ore"] = {},
+                    ["shale-ore"] = {},
                 }
             },
         }
