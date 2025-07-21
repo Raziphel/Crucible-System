@@ -4,6 +4,7 @@ data:extend({
         name = "crucible-system-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/edge-icon-tech.png"),
         icon_size = 256,
+        order = "t[crucible_system]-f[crucible-system-discovery]",
         effects =
         {
             {
@@ -36,6 +37,7 @@ data:extend({
         name = "shattered-nekros-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/shattered-nekros-tech.png"),
         icon_size = 256,
+        order = "t[crucible_system]-f[shattered-nekros-discovery]",
         effects =
         {
             {
@@ -60,6 +62,7 @@ data:extend({
         name = "legion-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/legion-tech.png"),
         icon_size = 256,
+        order = "t[crucible_system]-f[shattered-nekros-discovery]",
         effects =
         {
             {
@@ -68,7 +71,7 @@ data:extend({
                 use_icon_overlay_constant = true
             }
         },
-        prerequisites = { "crucible-system-discovery" },
+        prerequisites = { "crucible-system-discovery", "aop-smeltery" },
         unit =
         {
             count = 1000,

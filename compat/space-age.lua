@@ -74,21 +74,11 @@ PlanetsLib:update({
     }
 })
 
+deleteRoute("vulcanus-gleba")
 deleteRoute("gleba-aquilo")
 deleteRoute("fulgora-aquilo")
 
 data:extend({
-    {
-        type = "space-connection",
-        name = "gleba-to-system-edge",
-        subgroup = "planet-connections",
-        icon = "__space-age__/graphics/icons/solar-system-edge.png",
-        from = "gleba",
-        to = "sye-nauvis",
-        order = "h",
-        length = 20000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_fulgora)
-    },
     {
         type = "space-connection",
         name = "crucible-to-aquilo",
@@ -97,7 +87,7 @@ data:extend({
         from = "sye-crucible",
         to = "aquilo",
         order = "h",
-        length = 30000,
+        length = 15000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_aquilo)
     }
 })

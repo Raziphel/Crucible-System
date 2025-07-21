@@ -22,3 +22,4 @@ require("prototypes.legion.planet-updates")
 
 -- Compat
 require("compat.space-age")
+require("compat.age-of-production")

@@ -1,4 +1,4 @@
-local planet_map_gen = table.deepcopy(data.raw.planet.vulcanus.map_gen_settings)
+local planet_map_gen = table.deepcopy(data.raw.planet.nauvis.map_gen_settings)
 
 planet_map_gen.legion = function()
     return
@@ -13,22 +13,23 @@ planet_map_gen.legion = function()
         property_expression_names =
         {
             elevation = "vulcanus_elevation",
-            aux = "vulcanus_aux",
-            moisture = "vulcanus_moisture",
             temperature = "vulcanus_temperature",
-            cliffiness = "vulcanus_cliffiness",
+            moisture = "vulcanus_moisture",
+            aux = "vulcanus_aux",
+            cliffiness = "cliffiness_basic",
             cliff_elevation = "cliff_elevation_from_elevation",
             enemy_base_radius = "enemy_base_radius",
             enemy_base_frequency = "enemy_base_frequency",
+            ["entity:calcite:probability"] = "vulcanus_calcite_probability",
+            ["entity:calcite:richness"] = "vulcanus_calcite_richness",
         },
 
         autoplace_controls =
         {
-            ["enemy-base"] = { frequency = 1, size = 1, richness = 1 },
-            ["uranium-ore"] = { frequency = 0.5, size = 1, richness = 2 },
-            ["iridium-ore"] = { frequency = 0.5, size = 2, richness = 3 },
-            ["shale-ore"] = { frequency = 1.5, size = 3, richness = 3 },
-            ["legion-starting-area"] = { frequency = 1.5, size = 3, richness = 3 },
+            ["enemy-base"] = {},
+            ["calcite"] = {},
+            ["iridium-ore"] = {},
+            ["shale-ore"] = {},
             ["vulcanus_volcanism"] = {},
         },
         autoplace_settings = {
@@ -56,24 +57,25 @@ planet_map_gen.legion = function()
             },
             ["decorative"] = {
                 settings = {
-                    ["red-pita"] = { frequency = 0.2, size = 1, richness = 1 },
-                    ["fuchsia-pita"] = { frequency = 0.2, size = 1, richness = 1 },
-                    ["tiny-volcanic-rock"] = { frequency = 0.2, size = 1, richness = 1 },
-                    ["small-volcanic-rock"] = { frequency = 0.2, size = 1, richness = 1 },
-                    ["medium-volcanic-rock"] = { frequency = 0.2, size = 1, richness = 1 },
+                    ["red-pita"] = {},
+                    ["fuchsia-pita"] = {},
+                    ["tiny-volcanic-rock"] = {},
+                    ["small-volcanic-rock"] = {},
+                    ["medium-volcanic-rock"] = {},
+                    ["calcite-stain"] = {},
+                    ["calcite-stain-small"] = {},
                 }
             },
             ["entity"] = {
                 settings = {
                     ["armoured-biter-spawner"] = {},
-                    -- Vulcanus
-                    ["ashland-lichen-tree"] = { frequency = 0.5, size = 1, richness = 1 },
-                    ["ashland-lichen-tree-flaming"] = { frequency = 0.5, size = 1, richness = 1 },
-                    ["crater-cliff"] = {},
-                    -- Resources
-                    ["uranium-ore"] = {},
+                    ["calcite"] = {},
                     ["iridium-ore"] = {},
                     ["shale-ore"] = {},
+                    -- other
+                    ["ashland-lichen-tree"] = {},
+                    ["ashland-lichen-tree-flaming"] = {},
+                    ["crater-cliff"] = {},
                 }
             },
         }

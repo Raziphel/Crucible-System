@@ -9,6 +9,7 @@
         "space-age >= 2.0.55",
         "base >= 2.0.55",
         "PlanetsLib >= 1.2.8",
+        "Age-of-Production >= 1.6.22",
         "alien-biomes-graphics >= 0.7.1",
         "ArmouredBiters >= 1.2.1",
         "quality_glassware >= 0.1.0",

@@ -106,8 +106,19 @@ data:extend({
         from = "fulgora",
         to = "sye-nauvis",
         order = "h",
-        length = 10000,
+        length = 15000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
+    },
+    { -- Gleba to Nauvis
+        type = "space-connection",
+        name = "gleba-to-sye-nauvis",
+        subgroup = "planet-connections",
+        icon = "__space-age__/graphics/icons/solar-system-edge.png",
+        from = "gleba",
+        to = "sye-nauvis",
+        order = "h",
+        length = 15000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_fulgora)
     },
     { -- Nauvis to Crucible
         type = "space-connection",
@@ -117,7 +128,7 @@ data:extend({
         from = "sye-nauvis",
         to = "sye-crucible",
         order = "h",
-        length = 10000,
+        length = 30000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_fulgora)
     },
     { -- Crucible to Legion
@@ -139,7 +150,7 @@ data:extend({
         from = "sye-crucible",
         to = "shattered-nekros",
         order = "h",
-        length = 10000,
+        length = 20000,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
     },
     { -- Shattered Nekros to Legion

@@ -68,19 +68,19 @@ data:extend({
         {
             name = "iridium-ore",
             order = "f",
-            map_color = { r = 0.6, g = 0.65, b = 0.7, a = 1.0 }, -- cool metallic tone
-            mining_time = 5,                                     -- slow to mine, it’s tough stuff
+            map_color = { r = 0.6, g = 0.65, b = 0.7, a = 1.0 },
+            mining_time = 5,
             required_fluid = "lubricant",
-            fluid_amount = 30,                                   -- slightly more than shale, reflects denser structure
+            fluid_amount = 30,
             walking_sound = sounds.ore,
             mining_visualisation_tint = { r = 0.6, g = 0.65, b = 0.7, a = 1.0 },
         },
         {
             -- Generation
-            base_density = 0.15,                 -- much rarer than shale
-            regular_rq_factor_multiplier = 1.1,  -- allows for some patch scaling
-            starting_rq_factor_multiplier = 0.0, -- not in starting area; makes players work for it
-            candidate_spot_count = 12,           -- fewer total spots, emphasizing its scarcity
+            base_density = 0.15,
+            regular_rq_factor_multiplier = 1.1,
+            starting_rq_factor_multiplier = 1.0,
+            candidate_spot_count = 12,
             has_starting_area_placement = false
         }
     ),
@@ -88,18 +88,18 @@ data:extend({
         {
             name = "shale-ore",
             order = "e",
-            map_color = { r = 0.25, g = 0.2, b = 0.1, a = 1.0 },                 -- darker earthy tones, matching the rendered look
-            mining_time = 5,                                                     -- good, it’s slow and tough
+            map_color = { r = 0.25, g = 0.2, b = 0.1, a = 1.0 },
+            mining_time = 3,
             walking_sound = sounds.ore,
-            mining_visualisation_tint = { r = 0.4, g = 0.35, b = 0.2, a = 1.0 }, -- more of a shale-oil tint
+            mining_visualisation_tint = { r = 0.4, g = 0.35, b = 0.2, a = 1.0 },
         },
         {
             -- Generation
-            base_density = 1.0,                  -- increased because this isn't infinite or extremely rare
-            regular_rq_factor_multiplier = 1.2,  -- dialed back slightly for mid-game resource
-            starting_rq_factor_multiplier = 0.0, -- no starting area placement (players shouldn't get it too early)
-            candidate_spot_count = 18,           -- fewer but denser patches
-            has_starting_area_placement = true
+            base_density = 1.0,
+            regular_rq_factor_multiplier = 1.2,
+            starting_rq_factor_multiplier = 1.0,
+            candidate_spot_count = 18,
+            has_starting_area_placement = false
         }
     ),
 })
