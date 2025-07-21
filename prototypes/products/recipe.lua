@@ -13,23 +13,23 @@ data:extend({
 data:extend({
     {
         type = "recipe",
-        name = "iridium-processing",
+        name = "rhenium-processing",
         category = "advanced-metallurgy",
         energy_required = 150,
         ingredients = {
             { type = "fluid", name = "lava",        amount = 50 },
-            { type = "item",  name = "iridium-ore", amount = 5 },
+            { type = "item",  name = "rhenium-ore", amount = 5 },
         },
         results = {
-            { type = "item", name = "iridium-plate", amount = 1 },
+            { type = "item", name = "rhenium-plate", amount = 1 },
         },
         subgroup = "legion-processes",
-        order = "c[iridium]-b[iridium-smelting]",
+        order = "c[rhenium]-b[rhenium-smelting]",
         enabled = false,
         allow_productivity = true,
         auto_recycle = false,
         hide_from_signal_gui = false,
-        main_product = "iridium-plate",
+        main_product = "rhenium-plate",
         surface_conditions =
         {
             {

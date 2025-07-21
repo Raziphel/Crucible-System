@@ -66,7 +66,7 @@ end
 data:extend({
     resource(
         {
-            name = "iridium-ore",
+            name = "rhenium-ore",
             order = "f",
             map_color = { r = 0.6, g = 0.65, b = 0.7, a = 1.0 },
             mining_time = 5,

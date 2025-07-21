@@ -177,7 +177,7 @@ function create_connection_asteroid_field(data)
                 }
             }
 
-        -- ✅ Sort distances in ascending order (required by Factorio)
+        -- Sort distances in ascending order (required by Factorio)
         table.sort(spawns, function(a, b)
             return a.distance < b.distance
         end)

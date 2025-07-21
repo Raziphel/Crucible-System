@@ -21,21 +21,21 @@ data:extend({
     },
     {
         type = "technology",
-        name = "iridium-processing",
-        icon = "__crucible_system__/graphics/technology/iridium-tech.png",
+        name = "rhenium-processing",
+        icon = "__crucible_system__/graphics/technology/rhenium-tech.png",
         icon_size = 256,
-        order = "t[crucible_system]-f[iridium-processing]",
+        order = "t[crucible_system]-f[rhenium-processing]",
         prerequisites = { "legion-discovery" },
         research_trigger =
         {
             type = "mine-entity",
-            entity = "iridium-ore"
+            entity = "rhenium-ore"
         },
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "iridium-processing"
+                recipe = "rhenium-processing"
             },
         }
     },

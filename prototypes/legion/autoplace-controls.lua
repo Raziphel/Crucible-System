@@ -1,8 +1,8 @@
 data:extend({
     {
         type = "autoplace-control",
-        name = "iridium-ore",
-        localised_name = { "", "[entity=iridium-ore] ", { "entity-name.iridium-ore" } },
+        name = "rhenium-ore",
+        localised_name = { "", "[entity=rhenium-ore] ", { "entity-name.rhenium-ore" } },
         richness = true,
         order = "j-k",
         category = "resource"

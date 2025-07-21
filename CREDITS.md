@@ -10,7 +10,6 @@ All of the development team at "The Foundry" modding group on Discord for help a
 ------------------------------------------------------------------------------------
 
 CREDITS TO:
-Bartz24 for 'Planet Castra' concept and graphics. (Edited Millerite graphics for Iridium)
 Rjdunlap for all of his planet mods, used noise expressions and concepts for some planet generation.
 Spartanlaser32 for the 'More Asteroids' mod, used to for understanding asteroid generation.
 TheTwonky and angellusmortis for 'Solar Systems' & 'Interstellar Travel' which was used to know how to create the other systems.
