@@ -5,3 +5,8 @@ Simple roadmap of progress in the Crucible System.
 // 2. Travel to the Crucible System Edge 
 // 3. Collect entropium asteroids 
 // 4. Use Entropium to create Entropic Science Pack
+// 5. Visit Legion
+// 6. Start with Shale ore to create heavy oil
+// 7. Make Lubricant from the oil to be mine Bauxite ore
+// 8. Bauxite and Sulfiric Acid in chemical plant to get Alumina
+// 9. Smelt Alumina in to Aluminum
