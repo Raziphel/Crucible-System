@@ -4,7 +4,7 @@ data:extend({
         name = "crucible-system-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/edge-icon-tech.png"),
         icon_size = 256,
-        order = "t[crucible_system]-f[crucible-system-discovery]",
+        order = "c[crucible_system]-c[crucible-system-discovery]",
         effects =
         {
             {
@@ -37,7 +37,7 @@ data:extend({
         name = "shattered-nekros-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/shattered-nekros-tech.png"),
         icon_size = 256,
-        order = "t[crucible_system]-f[shattered-nekros-discovery]",
+        order = "c[crucible_system]-c[shattered-nekros-discovery]",
         effects =
         {
             {
@@ -62,7 +62,7 @@ data:extend({
         name = "legion-discovery",
         icons = util.technology_icon_constant_planet("__crucible_system__/graphics/technology/legion-tech.png"),
         icon_size = 256,
-        order = "t[crucible_system]-f[shattered-nekros-discovery]",
+        order = "c[crucible_system]-s[shattered-nekros-discovery]",
         effects =
         {
             {

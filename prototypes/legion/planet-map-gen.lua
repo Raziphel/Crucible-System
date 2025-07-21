@@ -28,7 +28,7 @@ planet_map_gen.legion = function()
         {
             ["enemy-base"] = {},
             ["calcite"] = {},
-            ["rhenium-ore"] = {},
+            ["bauxite-ore"] = {},
             ["shale-ore"] = {},
             ["vulcanus_volcanism"] = {},
         },
@@ -70,7 +70,7 @@ planet_map_gen.legion = function()
                 settings = {
                     ["armoured-biter-spawner"] = {},
                     ["calcite"] = {},
-                    ["rhenium-ore"] = {},
+                    ["bauxite-ore"] = {},
                     ["shale-ore"] = {},
                     -- other
                     ["ashland-lichen-tree"] = {},

@@ -13,23 +13,23 @@ data:extend({
 data:extend({
     {
         type = "recipe",
-        name = "rhenium-processing",
-        category = "advanced-metallurgy",
-        energy_required = 150,
+        name = "bauxite-processing",
+        category = "chemistry",
+        energy_required = 5,
         ingredients = {
-            { type = "fluid", name = "lava",        amount = 50 },
-            { type = "item",  name = "rhenium-ore", amount = 5 },
+            { type = "item",  name = "bauxite-ore",   amount = 5 },
+            { type = "fluid", name = "sulfuric-acid", amount = 10 }
         },
         results = {
-            { type = "item", name = "rhenium-plate", amount = 1 },
+            { type = "item", name = "alumina", amount = 3 },
         },
         subgroup = "legion-processes",
-        order = "c[rhenium]-b[rhenium-smelting]",
+        order = "c[bauxite]-b[bauxite-processing]",
         enabled = false,
         allow_productivity = true,
         auto_recycle = false,
         hide_from_signal_gui = false,
-        main_product = "rhenium-plate",
+        main_product = "alumina",
         surface_conditions =
         {
             {
@@ -39,6 +39,61 @@ data:extend({
             }
         },
     },
+    {
+        type = "recipe",
+        name = "alumina-smelting",
+        category = "chemistry",
+        energy_required = 10,
+        ingredients = {
+            { type = "item", name = "alumina", amount = 2 }
+        },
+        results = {
+            { type = "item", name = "aluminum-plate", amount = 3 },
+        },
+        subgroup = "legion-processes",
+        order = "c[bauxite]-b[bauxite-processing]",
+        enabled = false,
+        allow_productivity = true,
+        auto_recycle = false,
+        hide_from_signal_gui = false,
+        main_product = "aluminum-plate",
+        surface_conditions =
+        {
+            {
+                property = "pressure",
+                min = 4000,
+                max = 4000
+            }
+        },
+    },
+    -- {
+    --     type = "recipe",
+    --     name = "bauxite-processing",
+    --     category = "advanced-metallurgy",
+    --     energy_required = 50,
+    --     ingredients = {
+    --         { type = "fluid", name = "lava",        amount = 50 },
+    --         { type = "item",  name = "bauxite-ore", amount = 5 },
+    --     },
+    --     results = {
+    --         { type = "item", name = "aluminum", amount = 1 },
+    --     },
+    --     subgroup = "legion-processes",
+    --     order = "c[bauxite]-b[bauxite-smelting]",
+    --     enabled = false,
+    --     allow_productivity = true,
+    --     auto_recycle = false,
+    --     hide_from_signal_gui = false,
+    --     main_product = "bauxite-plate",
+    --     surface_conditions =
+    --     {
+    --         {
+    --             property = "pressure",
+    --             min = 4000,
+    --             max = 4000
+    --         }
+    --     },
+    -- },
     {
         type = "recipe",
         name = "shale-cracking",
